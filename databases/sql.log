@@ -1,0 +1,2390 @@
+timestamp: 2017-09-27T22:20:30.449000
+CREATE TABLE "auth_user"(
+    "id" INTEGER PRIMARY KEY AUTOINCREMENT,
+    "first_name" CHAR(128),
+    "last_name" CHAR(128),
+    "email" CHAR(512),
+    "password" CHAR(512),
+    "registration_key" CHAR(512),
+    "reset_password_key" CHAR(512),
+    "registration_id" CHAR(512)
+);
+success!
+timestamp: 2017-09-27T22:20:30.489000
+CREATE TABLE "auth_group"(
+    "id" INTEGER PRIMARY KEY AUTOINCREMENT,
+    "role" CHAR(512),
+    "description" TEXT
+);
+success!
+timestamp: 2017-09-27T22:20:30.535000
+CREATE TABLE "auth_membership"(
+    "id" INTEGER PRIMARY KEY AUTOINCREMENT,
+    "user_id" INTEGER REFERENCES "auth_user" ("id") ON DELETE CASCADE  ,
+    "group_id" INTEGER REFERENCES "auth_group" ("id") ON DELETE CASCADE  
+);
+success!
+timestamp: 2017-09-27T22:20:30.567000
+CREATE TABLE "auth_permission"(
+    "id" INTEGER PRIMARY KEY AUTOINCREMENT,
+    "group_id" INTEGER REFERENCES "auth_group" ("id") ON DELETE CASCADE  ,
+    "name" CHAR(512),
+    "table_name" CHAR(512),
+    "record_id" INTEGER
+);
+success!
+timestamp: 2017-09-27T22:20:30.602000
+CREATE TABLE "auth_event"(
+    "id" INTEGER PRIMARY KEY AUTOINCREMENT,
+    "time_stamp" TIMESTAMP,
+    "client_ip" CHAR(512),
+    "user_id" INTEGER REFERENCES "auth_user" ("id") ON DELETE CASCADE  ,
+    "origin" CHAR(512),
+    "description" TEXT
+);
+success!
+timestamp: 2017-09-27T22:20:30.648000
+CREATE TABLE "auth_cas"(
+    "id" INTEGER PRIMARY KEY AUTOINCREMENT,
+    "user_id" INTEGER REFERENCES "auth_user" ("id") ON DELETE CASCADE  ,
+    "created_on" TIMESTAMP,
+    "service" CHAR(512),
+    "ticket" CHAR(512),
+    "renew" CHAR(1)
+);
+success!
+timestamp: 2017-09-28T06:39:32.270000
+CREATE TABLE "sales"(
+    "id" INTEGER PRIMARY KEY AUTOINCREMENT,
+    "name" CHAR(512)
+);
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+timestamp: 2017-09-28T06:51:53.494000
+CREATE TABLE "sales2"(
+    "id" INTEGER PRIMARY KEY AUTOINCREMENT
+);
+success!
+timestamp: 2017-09-28T06:53:09.166000
+ALTER TABLE "sales" ADD "Transaction_date" CHAR(512);
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+timestamp: 2017-09-28T06:55:41.616000
+ALTER TABLE "sales" ADD "Product" CHAR(512);
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+timestamp: 2017-09-28T07:36:14.287000
+ALTER TABLE "sales" ADD "Country" CHAR(512);
+timestamp: 2017-09-28T07:36:55.384000
+ALTER TABLE "sales" ADD "Country" CHAR(512);
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+timestamp: 2017-09-28T07:38:33.613000
+CREATE TABLE "sales2"(
+    "id" INTEGER PRIMARY KEY AUTOINCREMENT,
+    "Transaction_date" CHAR(512),
+    "Product" CHAR(512),
+    "Price" CHAR(512),
+    "Payment_Type" CHAR(512),
+    "Country" CHAR(512)
+);
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+timestamp: 2017-09-28T07:41:36.775000
+CREATE TABLE "sales"(
+    "id" INTEGER PRIMARY KEY AUTOINCREMENT,
+    "Transaction_date" CHAR(512),
+    "Product" CHAR(512),
+    "Price" CHAR(512),
+    "Payment_Type" CHAR(512),
+    "Country" CHAR(512)
+);
+timestamp: 2017-09-28T07:41:59.646000
+CREATE TABLE "sales"(
+    "id" INTEGER PRIMARY KEY AUTOINCREMENT,
+    "Transaction_date" CHAR(512),
+    "Product" CHAR(512),
+    "Price" CHAR(512),
+    "Payment_Type" CHAR(512),
+    "Country" CHAR(512)
+);
+timestamp: 2017-09-28T07:42:30.372000
+CREATE TABLE "sales"(
+    "id" INTEGER PRIMARY KEY AUTOINCREMENT,
+    "Transaction_date" CHAR(512),
+    "Product" CHAR(512),
+    "Price" CHAR(512),
+    "Payment_Type" CHAR(512),
+    "Country" CHAR(512)
+);
+success!
+DROP TABLE "sales";
+success!
+timestamp: 2017-10-10T10:30:43.337000
+CREATE TABLE "sales"(
+    "id" INTEGER PRIMARY KEY AUTOINCREMENT,
+    "Transaction_date" CHAR(512),
+    "Product" CHAR(512),
+    "Price" CHAR(512),
+    "Payment_Type" CHAR(512),
+    "Country" CHAR(512)
+);
+success!
+DROP TABLE "sales";
+success!
+timestamp: 2017-10-10T10:31:12.972000
+CREATE TABLE "sales"(
+    "id" INTEGER PRIMARY KEY AUTOINCREMENT,
+    "Transaction_date" CHAR(512),
+    "Product" CHAR(512),
+    "Price" CHAR(512),
+    "Payment_Type" CHAR(512),
+    "Country" CHAR(512)
+);
+success!
+DROP TABLE "sales";
+success!
+timestamp: 2017-10-10T10:31:26.618000
+CREATE TABLE "sales"(
+    "id" INTEGER PRIMARY KEY AUTOINCREMENT,
+    "Transaction_date" CHAR(512),
+    "Product" CHAR(512),
+    "Price" CHAR(512),
+    "Payment_Type" CHAR(512),
+    "Country" CHAR(512)
+);
+success!
+DROP TABLE "sales";
+success!
+timestamp: 2017-10-10T10:36:00.344000
+CREATE TABLE "sales"(
+    "id" INTEGER PRIMARY KEY AUTOINCREMENT,
+    "Transaction_date" CHAR(512),
+    "Product" CHAR(512),
+    "Price" CHAR(512),
+    "Payment_Type" CHAR(512),
+    "Country" CHAR(512)
+);
+success!
+DROP TABLE "sales";
+success!
+timestamp: 2017-10-10T10:36:02.632000
+CREATE TABLE "sales"(
+    "id" INTEGER PRIMARY KEY AUTOINCREMENT,
+    "Transaction_date" CHAR(512),
+    "Product" CHAR(512),
+    "Price" CHAR(512),
+    "Payment_Type" CHAR(512),
+    "Country" CHAR(512)
+);
+success!
+DROP TABLE "sales";
+success!
+timestamp: 2017-10-10T10:48:54.553000
+CREATE TABLE "sales"(
+    "id" INTEGER PRIMARY KEY AUTOINCREMENT,
+    "Transaction_date" CHAR(512),
+    "Product" CHAR(512),
+    "Price" CHAR(512),
+    "Payment_Type" CHAR(512),
+    "Country" CHAR(512)
+);
+success!
+DROP TABLE "sales";
+success!
+timestamp: 2017-10-10T10:57:17.004000
+CREATE TABLE "sales"(
+    "id" INTEGER PRIMARY KEY AUTOINCREMENT,
+    "Transaction_date" CHAR(512),
+    "Product" CHAR(512),
+    "Price" CHAR(512),
+    "Payment_Type" CHAR(512),
+    "Country" CHAR(512)
+);
+success!
+DROP TABLE "sales";
+success!
+timestamp: 2017-10-10T10:57:29.784000
+CREATE TABLE "sales"(
+    "id" INTEGER PRIMARY KEY AUTOINCREMENT,
+    "Transaction_date" CHAR(512),
+    "Product" CHAR(512),
+    "Price" CHAR(512),
+    "Payment_Type" CHAR(512),
+    "Country" CHAR(512)
+);
+success!
+DROP TABLE "sales";
+success!
+timestamp: 2017-10-10T10:57:40.200000
+CREATE TABLE "sales"(
+    "id" INTEGER PRIMARY KEY AUTOINCREMENT,
+    "Transaction_date" CHAR(512),
+    "Product" CHAR(512),
+    "Price" CHAR(512),
+    "Payment_Type" CHAR(512),
+    "Country" CHAR(512)
+);
+success!
+DROP TABLE "sales";
+success!
+timestamp: 2017-10-10T10:57:40.621000
+CREATE TABLE "sales"(
+    "id" INTEGER PRIMARY KEY AUTOINCREMENT,
+    "Transaction_date" CHAR(512),
+    "Product" CHAR(512),
+    "Price" CHAR(512),
+    "Payment_Type" CHAR(512),
+    "Country" CHAR(512)
+);
+success!
+DROP TABLE "sales";
+success!
+timestamp: 2017-10-10T10:57:44.858000
+CREATE TABLE "sales"(
+    "id" INTEGER PRIMARY KEY AUTOINCREMENT,
+    "Transaction_date" CHAR(512),
+    "Product" CHAR(512),
+    "Price" CHAR(512),
+    "Payment_Type" CHAR(512),
+    "Country" CHAR(512)
+);
+success!
+DROP TABLE "sales";
+success!
+timestamp: 2017-10-10T10:58:08.521000
+CREATE TABLE "sales"(
+    "id" INTEGER PRIMARY KEY AUTOINCREMENT,
+    "Transaction_date" CHAR(512),
+    "Product" CHAR(512),
+    "Price" CHAR(512),
+    "Payment_Type" CHAR(512),
+    "Country" CHAR(512)
+);
+success!
+DROP TABLE "sales";
+success!
+timestamp: 2017-10-10T11:08:02.579000
+CREATE TABLE "sales"(
+    "id" INTEGER PRIMARY KEY AUTOINCREMENT,
+    "Transaction_date" CHAR(512),
+    "Product" CHAR(512),
+    "Price" CHAR(512),
+    "Payment_Type" CHAR(512),
+    "Country" CHAR(512)
+);
+success!
+DROP TABLE "sales";
+success!
+timestamp: 2017-10-10T11:08:04.423000
+CREATE TABLE "sales"(
+    "id" INTEGER PRIMARY KEY AUTOINCREMENT,
+    "Transaction_date" CHAR(512),
+    "Product" CHAR(512),
+    "Price" CHAR(512),
+    "Payment_Type" CHAR(512),
+    "Country" CHAR(512)
+);
+success!
+DROP TABLE "sales";
+success!
+timestamp: 2017-10-10T11:09:22.204000
+CREATE TABLE "sales"(
+    "id" INTEGER PRIMARY KEY AUTOINCREMENT,
+    "Transaction_date" CHAR(512),
+    "Product" CHAR(512),
+    "Price" CHAR(512),
+    "Payment_Type" CHAR(512),
+    "Country" CHAR(512)
+);
+success!
+DROP TABLE "sales";
+success!
+timestamp: 2017-10-10T11:10:15.430000
+CREATE TABLE "sales"(
+    "id" INTEGER PRIMARY KEY AUTOINCREMENT,
+    "Transaction_date" CHAR(512),
+    "Product" CHAR(512),
+    "Price" CHAR(512),
+    "Payment_Type" CHAR(512),
+    "Country" CHAR(512)
+);
+success!
+DELETE FROM "sales";
+DELETE FROM sqlite_sequence WHERE name='sales'
+success!
+DELETE FROM "sales";
+DELETE FROM sqlite_sequence WHERE name='sales'
+success!
+timestamp: 2017-10-10T12:18:58.813000
+CREATE TABLE "gdp"(
+    "id" INTEGER PRIMARY KEY AUTOINCREMENT,
+    "Country_Name" CHAR(512),
+    "Country_Code" CHAR(512),
+    "Year" CHAR(512),
+    "Value" CHAR(512)
+);
+success!
+DELETE FROM "sales";
+DELETE FROM sqlite_sequence WHERE name='sales'
+success!
+DELETE FROM "sales";
+DELETE FROM sqlite_sequence WHERE name='sales'
+success!
+DELETE FROM "gdp";
+DELETE FROM sqlite_sequence WHERE name='gdp'
+success!
+DELETE FROM "sales";
+DELETE FROM sqlite_sequence WHERE name='sales'
+success!
+DELETE FROM "gdp";
+DELETE FROM sqlite_sequence WHERE name='gdp'
+success!
+timestamp: 2017-10-10T13:06:41.995000
+ALTER TABLE "gdp" ADD "CountryName" CHAR(512);
+timestamp: 2017-10-10T13:14:42.618000
+ALTER TABLE "gdp" ADD "CountryName" CHAR(512);
+timestamp: 2017-10-10T13:15:42.021000
+ALTER TABLE "gdp" ADD "CountryName" CHAR(512);
+timestamp: 2017-10-10T13:16:42.040000
+ALTER TABLE "gdp" ADD "CountryName" CHAR(512);
+timestamp: 2017-10-10T13:17:42.666000
+ALTER TABLE "gdp" ADD "CountryName" CHAR(512);
+timestamp: 2017-10-10T13:18:42.650000
+ALTER TABLE "gdp" ADD "CountryName" CHAR(512);
+timestamp: 2017-10-10T13:19:42.728000
+ALTER TABLE "gdp" ADD "CountryName" CHAR(512);
+timestamp: 2017-10-10T13:20:42.659000
+ALTER TABLE "gdp" ADD "CountryName" CHAR(512);
+timestamp: 2017-10-10T13:21:42.650000
+ALTER TABLE "gdp" ADD "CountryName" CHAR(512);
+timestamp: 2017-10-10T13:22:42.644000
+ALTER TABLE "gdp" ADD "CountryName" CHAR(512);
+timestamp: 2017-10-10T13:23:42.670000
+ALTER TABLE "gdp" ADD "CountryName" CHAR(512);
+timestamp: 2017-10-10T13:24:42.660000
+ALTER TABLE "gdp" ADD "CountryName" CHAR(512);
+timestamp: 2017-10-10T13:25:42.012000
+ALTER TABLE "gdp" ADD "CountryName" CHAR(512);
+timestamp: 2017-10-10T15:54:51.187000
+CREATE TABLE "gdp"(
+    "id" INTEGER PRIMARY KEY AUTOINCREMENT,
+    "CountryName" CHAR(512),
+    "CountryCode" CHAR(512),
+    "Year" INTEGER,
+    "Value" INTEGER
+);
+timestamp: 2017-10-10T15:55:18.670000
+CREATE TABLE "gdp"(
+    "id" INTEGER PRIMARY KEY AUTOINCREMENT,
+    "CountryName" CHAR(512),
+    "CountryCode" CHAR(512),
+    "Year" INTEGER,
+    "Value" INTEGER
+);
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+timestamp: 2017-10-10T16:03:18.421000
+CREATE TABLE "gdp"(
+    "id" INTEGER PRIMARY KEY AUTOINCREMENT,
+    "CountryName" CHAR(512),
+    "CountryCode" CHAR(512),
+    "Year" INTEGER,
+    "Value" INTEGER
+);
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+DELETE FROM "sales";
+DELETE FROM sqlite_sequence WHERE name='sales'
+success!
+DELETE FROM "gdp";
+DELETE FROM sqlite_sequence WHERE name='gdp'
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+DELETE FROM "sales";
+DELETE FROM sqlite_sequence WHERE name='sales'
+success!
+DELETE FROM "gdp";
+DELETE FROM sqlite_sequence WHERE name='gdp'
+success!
+success!
+timestamp: 2017-10-14T09:02:59.341000
+ALTER TABLE "gdp" ADD "Gdp" CHAR(512);
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+DELETE FROM "sales";
+DELETE FROM sqlite_sequence WHERE name='sales'
+success!
+DELETE FROM "gdp";
+DELETE FROM sqlite_sequence WHERE name='gdp'
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+DELETE FROM "sales";
+DELETE FROM sqlite_sequence WHERE name='sales'
+success!
+DELETE FROM "gdp";
+DELETE FROM sqlite_sequence WHERE name='gdp'
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+DELETE FROM "sales";
+DELETE FROM sqlite_sequence WHERE name='sales'
+success!
+DELETE FROM "gdp";
+DELETE FROM sqlite_sequence WHERE name='gdp'
+success!
+success!
+success!
+success!
+success!
+success!
+DELETE FROM "sales";
+DELETE FROM sqlite_sequence WHERE name='sales'
+success!
+DELETE FROM "gdp";
+DELETE FROM sqlite_sequence WHERE name='gdp'
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+DELETE FROM "sales";
+DELETE FROM sqlite_sequence WHERE name='sales'
+success!
+DELETE FROM "gdp";
+DELETE FROM sqlite_sequence WHERE name='gdp'
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+DELETE FROM "sales";
+DELETE FROM sqlite_sequence WHERE name='sales'
+success!
+DELETE FROM "gdp";
+DELETE FROM sqlite_sequence WHERE name='gdp'
+success!
+success!
+success!
+success!
+success!
+DELETE FROM "sales";
+DELETE FROM sqlite_sequence WHERE name='sales'
+success!
+DELETE FROM "gdp";
+DELETE FROM sqlite_sequence WHERE name='gdp'
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+DELETE FROM "sales";
+DELETE FROM sqlite_sequence WHERE name='sales'
+success!
+DELETE FROM "gdp";
+DELETE FROM sqlite_sequence WHERE name='gdp'
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+DELETE FROM "sales";
+DELETE FROM sqlite_sequence WHERE name='sales'
+success!
+DELETE FROM "gdp";
+DELETE FROM sqlite_sequence WHERE name='gdp'
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+DELETE FROM "sales";
+DELETE FROM sqlite_sequence WHERE name='sales'
+success!
+DELETE FROM "gdp";
+DELETE FROM sqlite_sequence WHERE name='gdp'
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+timestamp: 2017-10-14T16:55:45.267000
+CREATE TABLE "gdp1"(
+    "id" INTEGER PRIMARY KEY AUTOINCREMENT,
+    "CountryName" CHAR(512),
+    "CountryCode" CHAR(512),
+    "Year" CHAR(512),
+    "Gdp" CHAR(512)
+);
+success!
+DELETE FROM "sales";
+DELETE FROM sqlite_sequence WHERE name='sales'
+success!
+DELETE FROM "gdp1";
+DELETE FROM sqlite_sequence WHERE name='gdp1'
+success!
+success!
+success!
+DELETE FROM "sales";
+DELETE FROM sqlite_sequence WHERE name='sales'
+success!
+DELETE FROM "gdp";
+success!
+success!
+success!
+DELETE FROM "sales";
+DELETE FROM sqlite_sequence WHERE name='sales'
+success!
+DELETE FROM "gdp";
+success!
+success!
+success!
+success!
+timestamp: 2017-10-14T16:59:55.943000
+CREATE TABLE "gdp"(
+    "id" INTEGER PRIMARY KEY AUTOINCREMENT,
+    "CountryName" CHAR(512),
+    "CountryCode" CHAR(512),
+    "Year" CHAR(512),
+    "Gdp" CHAR(512)
+);
+success!
+DELETE FROM "sales";
+DELETE FROM sqlite_sequence WHERE name='sales'
+success!
+DELETE FROM "gdp";
+DELETE FROM sqlite_sequence WHERE name='gdp'
+success!
+DELETE FROM "sales";
+DELETE FROM sqlite_sequence WHERE name='sales'
+success!
+DELETE FROM "gdp";
+DELETE FROM sqlite_sequence WHERE name='gdp'
+success!
+DELETE FROM "sales";
+DELETE FROM sqlite_sequence WHERE name='sales'
+success!
+DELETE FROM "gdp";
+DELETE FROM sqlite_sequence WHERE name='gdp'
+success!
+DELETE FROM "sales";
+DELETE FROM sqlite_sequence WHERE name='sales'
+success!
+DELETE FROM "gdp";
+DELETE FROM sqlite_sequence WHERE name='gdp'
+success!
+DELETE FROM "sales";
+DELETE FROM sqlite_sequence WHERE name='sales'
+success!
+DELETE FROM "gdp";
+DELETE FROM sqlite_sequence WHERE name='gdp'
+success!
+DELETE FROM "sales";
+DELETE FROM sqlite_sequence WHERE name='sales'
+success!
+DELETE FROM "gdp";
+DELETE FROM sqlite_sequence WHERE name='gdp'
+success!
+DELETE FROM "sales";
+DELETE FROM sqlite_sequence WHERE name='sales'
+success!
+DELETE FROM "gdp";
+DELETE FROM sqlite_sequence WHERE name='gdp'
+success!
+DELETE FROM "sales";
+DELETE FROM sqlite_sequence WHERE name='sales'
+success!
+DELETE FROM "gdp";
+DELETE FROM sqlite_sequence WHERE name='gdp'
+success!
+DELETE FROM "sales";
+DELETE FROM sqlite_sequence WHERE name='sales'
+success!
+DELETE FROM "gdp";
+DELETE FROM sqlite_sequence WHERE name='gdp'
+success!
+DELETE FROM "sales";
+DELETE FROM sqlite_sequence WHERE name='sales'
+success!
+DELETE FROM "gdp";
+DELETE FROM sqlite_sequence WHERE name='gdp'
+success!

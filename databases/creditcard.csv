@@ -1,0 +1,999 @@
+sales.id,sales.Transaction_date,sales.Product,sales.Price,sales.Payment_Type,sales.Country
+1,1/2/2009 6:17,Product1,1200,Mastercard,United Kingdom
+2,1/2/2009 4:53,Product1,1200,Visa,United States
+3,1/2/2009 13:08,Product1,1200,Mastercard,United States
+4,1/3/2009 14:44,Product1,1200,Visa,Australia
+5,1/4/2009 12:56,Product2,3600,Visa,United States
+6,1/4/2009 13:19,Product1,1200,Visa,United States
+7,1/4/2009 20:11,Product1,1200,Mastercard,United States
+8,1/2/2009 20:09,Product1,1200,Mastercard,United States
+9,1/4/2009 13:17,Product1,1200,Mastercard,Israel
+10,1/4/2009 14:11,Product1,1200,Visa,France
+11,1/5/2009 2:42,Product1,1200,Diners,United States
+12,1/5/2009 5:39,Product1,1200,Amex,Netherlands
+13,1/2/2009 9:16,Product1,1200,Mastercard,United States
+14,1/5/2009 10:08,Product1,1200,Visa,United States
+15,1/2/2009 14:18,Product1,1200,Visa,United States
+16,1/4/2009 1:05,Product1,1200,Diners,Ireland
+17,1/5/2009 11:37,Product1,1200,Visa,Canada
+18,1/6/2009 5:02,Product1,1200,Diners,India
+19,1/6/2009 7:45,Product2,3600,Visa,United Kingdom
+20,1/2/2009 7:35,Product1,1200,Diners,United States
+21,1/6/2009 12:56,Product1,1200,Visa,United Kingdom
+22,1/1/2009 11:05,Product1,1200,Diners,Ireland
+23,1/5/2009 4:10,Product1,1200,Mastercard,South Africa
+24,1/6/2009 7:18,Product1,1200,Visa,United States
+25,1/2/2009 1:11,Product1,1200,Mastercard,Finland
+26,1/1/2009 2:24,Product1,1200,Visa,United States
+27,1/7/2009 8:08,Product1,1200,Diners,United States
+28,1/2/2009 2:57,Product1,1200,Visa,United Kingdom
+29,1/1/2009 20:21,Product1,1200,Visa,United States
+30,1/8/2009 0:42,Product1,1200,Visa,United States
+31,1/8/2009 3:56,Product1,1200,Mastercard,United States
+32,1/8/2009 3:16,Product1,1200,Mastercard,United States
+33,1/8/2009 1:59,Product1,1200,Mastercard,Switzerland
+34,1/3/2009 9:03,Product1,1200,Diners,United States
+35,1/5/2009 13:17,Product1,1200,Mastercard,Netherlands
+36,1/6/2009 7:46,Product1,1200,Amex,United States
+37,1/5/2009 20:00,Product2,3600,Visa,Australia
+38,1/8/2009 16:24,Product1,1200,Visa,United States
+39,1/9/2009 6:39,Product1,1200,Mastercard,United States
+40,1/6/2009 22:19,Product2,3600,Amex,United States
+41,1/6/2009 23:00,Product2,3600,Amex,United States
+42,1/7/2009 7:44,Product1,1200,Mastercard,United States
+43,1/3/2009 13:24,Product1,1200,Visa,Denmark
+44,1/7/2009 15:12,Product2,3600,Visa,United States
+45,1/7/2009 20:15,Product1,1200,Amex,United States
+46,1/3/2009 10:11,Product2,3600,Visa,United States
+47,1/9/2009 15:58,Product1,1200,Mastercard,United Kingdom
+48,1/3/2009 13:11,Product1,1200,Mastercard,Denmark
+49,1/10/2009 12:57,Product1,1200,Amex,United States
+50,1/10/2009 14:43,Product1,1200,Diners,Ireland
+51,1/10/2009 12:05,Product1,1200,Visa,United States
+52,1/6/2009 1:20,Product1,1200,Mastercard,Australia
+53,1/10/2009 14:56,Product1,1200,Visa,United States
+54,1/7/2009 10:01,Product1,1200,Visa,United States
+55,1/1/2009 1:26,Product1,1200,Mastercard,United States
+56,1/11/2009 2:04,Product1,1200,Visa,Australia
+57,1/11/2009 14:17,Product1,1200,Visa,Belgium
+58,1/10/2009 21:38,Product1,1200,Visa,Canada
+59,1/7/2009 6:18,Product1,1200,Mastercard,United States
+60,1/4/2009 8:39,Product2,3600,Diners,Canada
+61,1/5/2009 0:31,Product1,1200,Mastercard,Sweden
+62,1/2/2009 6:07,Product1,1200,Visa,United Kingdom
+63,1/12/2009 3:25,Product1,1200,Mastercard,United States
+64,1/4/2009 13:56,Product1,1200,Mastercard,United Kingdom
+65,1/7/2009 0:12,Product2,3600,Mastercard,Switzerland
+66,1/12/2009 5:18,Product1,1200,Mastercard,United Kingdom
+67,1/8/2009 15:16,Product1,1200,Visa,United States
+68,1/11/2009 11:33,Product1,1200,Visa,Norway
+69,1/7/2009 20:22,Product1,1200,Visa,Canada
+70,1/2/2009 22:00,Product1,1200,Diners,United States
+71,1/5/2009 13:52,Product1,1200,Mastercard,Switzerland
+72,1/8/2009 20:32,Product1,1200,Visa,Canada
+73,1/8/2009 13:34,Product1,1200,Visa,Canada
+74,1/11/2009 13:08,Product1,1200,Visa,United States
+75,1/12/2009 19:04,Product1,1200,Visa,Canada
+76,1/12/2009 13:41,Product1,1200,Visa,Luxembourg
+77,1/11/2009 10:38,Product1,1200,Mastercard,United Kingdom
+78,1/13/2009 5:57,Product1,1200,Visa,Italy
+79,1/13/2009 6:13,Product1,1200,Visa,United States
+80,1/8/2009 13:14,Product1,1200,Visa,Norway
+81,1/2/2009 11:41,Product1,1200,Visa,United States
+82,1/7/2009 19:50,Product1,1200,Diners,United States
+83,1/1/2009 20:28,Product1,1200,Visa,Canada
+84,1/3/2009 15:22,Product1,1200,Mastercard,Canada
+85,1/12/2009 3:03,Product2,3600,Mastercard,United States
+86,1/5/2009 8:58,Product2,3600,Mastercard,Germany
+87,1/10/2009 14:03,Product1,1200,Mastercard,United Kingdom
+88,1/13/2009 11:26,Product1,1200,Visa,United States
+89,1/2/2009 12:18,Product1,1200,Visa,Denmark
+90,1/14/2009 4:54,Product1,1200,Mastercard,United States
+91,1/6/2009 17:15,Product1,1200,Visa,Moldova
+92,1/3/2009 13:56,Product1,1200,Visa,United States
+93,1/4/2009 7:54,Product1,1200,Visa,Canada
+94,1/12/2009 7:28,Product1,1200,Amex,Spain
+95,1/6/2009 15:15,Product1,1200,Mastercard,Ireland
+96,1/13/2009 23:56,Product1,1200,Mastercard,United States
+97,1/14/2009 19:32,Product1,1200,Visa,United States
+98,1/6/2009 21:13,Product1,1200,Visa,Canada
+99,1/14/2009 11:19,Product1,1200,Visa,United Arab Emirates
+100,1/13/2009 19:39,Product1,1200,Visa,United States
+101,1/8/2009 7:26,Product1,1200,Mastercard,United Kingdom
+102,1/15/2009 2:40,Product1,1200,Mastercard,United States
+103,1/12/2009 6:40,Product1,1200,Visa,Bahrain
+104,1/15/2009 3:43,Product1,1200,Visa,France
+105,1/5/2009 15:39,Product1,1200,Visa,United States
+106,1/10/2009 5:21,Product1,1200,Amex,United States
+107,1/15/2009 4:12,Product1,1200,Mastercard,United States
+108,1/12/2009 11:48,Product1,1200,Visa,Canada
+109,1/6/2009 10:48,Product1,1200,Mastercard,United States
+110,1/14/2009 9:10,Product1,1200,Mastercard,United States
+111,1/14/2009 22:44,Product1,1200,Visa,United States
+112,1/6/2009 7:23,Product1,1200,Visa,Canada
+113,1/1/2009 5:04,Product1,1200,Mastercard,Netherlands
+114,1/15/2009 11:56,Product1,1200,Visa,Canada
+115,1/15/2009 11:58,Product1,1200,Visa,Canada
+116,1/12/2009 9:43,Product1,1200,Diners,Germany
+117,1/15/2009 12:33,Product1,1200,Visa,United States
+118,1/14/2009 11:35,Product1,1200,Visa,United States
+119,1/14/2009 15:40,Product1,1200,Amex,United States
+120,1/3/2009 11:08,Product1,1200,Amex,United States
+121,1/12/2009 1:37,Product1,1200,Visa,Australia
+122,1/16/2009 7:21,Product1,2100,Mastercard,United States
+123,1/15/2009 12:54,Product1,1200,Mastercard,Canada
+124,1/7/2009 7:19,Product1,1200,Amex,Belgium
+125,1/3/2009 9:56,Product1,1200,Visa,United States
+126,1/16/2009 17:41,Product1,1200,Visa,United States
+127,1/5/2009 5:33,Product1,1200,Visa,United States
+128,1/2/2009 0:50,Product1,1200,Visa,Turkey
+129,1/13/2009 1:51,Product1,1200,Visa,South Africa
+130,1/15/2009 10:24,Product1,1200,Visa,United Kingdom
+131,1/11/2009 8:59,Product1,1200,Visa,United States
+132,1/15/2009 15:56,Product1,1200,Amex,United States
+133,1/1/2009 12:19,Product1,1200,Visa,United States
+134,1/6/2009 14:03,Product1,1200,Visa,United States
+135,1/9/2009 15:32,Product1,1200,Diners,United Kingdom
+136,1/17/2009 12:59,Product1,1200,Diners,Netherlands
+137,1/12/2009 12:37,Product1,1200,Visa,United States
+138,1/4/2009 7:43,Product1,1200,Mastercard,United States
+139,1/17/2009 16:22,Product1,1200,Visa,United States
+140,1/1/2009 3:51,Product1,1200,Mastercard,Netherlands
+141,1/18/2009 5:27,Product1,1200,Visa,United States
+142,1/18/2009 5:15,Product1,1200,Diners,Ireland
+143,1/1/2009 1:51,Product1,1200,Mastercard,Denmark
+144,1/18/2009 6:30,Product1,1200,Visa,Switzerland
+145,1/11/2009 10:51,Product1,1200,Mastercard,Germany
+146,1/4/2009 17:02,Product1,1200,Mastercard,United States
+147,1/17/2009 1:23,Product1,1200,Amex,Kuwait
+148,1/18/2009 2:16,Product1,1200,Visa,United States
+149,1/18/2009 11:34,Product2,3600,Visa,United Kingdom
+150,1/18/2009 4:38,Product1,1200,Visa,United Kingdom
+151,1/18/2009 13:26,Product3,7500,Mastercard,Ireland
+152,1/18/2009 11:53,Product1,1200,Visa,United States
+153,1/18/2009 12:04,Product1,1200,Visa,United States
+154,1/13/2009 19:54,Product1,1200,Diners,United States
+155,1/5/2009 21:06,Product1,1200,Mastercard,United States
+156,1/14/2009 6:32,Product1,1200,Visa,United States
+157,1/4/2009 23:48,Product1,1200,Diners,Canada
+158,1/18/2009 16:32,Product2,3600,Visa,United States
+159,1/18/2009 17:04,Product2,3600,Visa,United States
+160,1/18/2009 17:20,Product2,3600,Visa,United States
+161,1/18/2009 17:39,Product2,3600,Visa,United States
+162,1/11/2009 11:20,Product1,1200,Visa,United States
+163,1/13/2009 20:59,Product1,1200,Mastercard,Canada
+164,1/12/2009 16:50,Product1,1200,Visa,United States
+165,1/12/2009 15:12,Product1,1200,Mastercard,United States
+166,1/6/2009 12:27,Product1,1200,Mastercard,Netherlands
+167,1/9/2009 18:52,Product1,1200,Visa,United States
+168,1/18/2009 23:17,Product1,1200,Visa,United States
+169,1/7/2009 8:21,Product1,1200,Visa,Norway
+170,1/3/2009 9:54,Product1,1200,Visa,Turkey
+171,1/5/2009 19:37,Product1,1200,Amex,United States
+172,1/4/2009 12:49,Product1,1200,Diners,Canada
+173,1/8/2009 11:55,Product2,3600,Visa,Germany
+174,1/14/2009 18:21,Product1,1200,Visa,United States
+175,1/11/2009 19:01,Product1,1200,Diners,United States
+176,1/14/2009 5:20,Product2,3600,Visa,Switzerland
+177,1/15/2009 8:07,Product1,1200,Visa,United States
+178,1/15/2009 8:10,Product1,1200,Visa,United States
+179,1/2/2009 17:45,Product1,1200,Mastercard,United States
+180,1/19/2009 16:10,Product1,1200,Mastercard,United States
+181,1/19/2009 16:55,Product1,1200,Mastercard,United States
+182,1/10/2009 17:41,Product1,1200,Visa,United States
+183,1/18/2009 13:49,Product2,3600,Visa,United States
+184,1/15/2009 5:47,Product1,1200,Visa,United States
+185,1/19/2009 23:06,Product1,1200,Mastercard,United States
+186,1/19/2009 11:12,Product1,1200,Visa,United Kingdom
+187,1/4/2009 1:38,Product1,1200,Amex,Australia
+188,1/20/2009 3:11,Product1,1200,Visa,United Kingdom
+189,1/3/2009 10:52,Product1,1200,Visa,United States
+190,1/20/2009 5:24,Product3 ,7500,Mastercard,United States
+191,1/20/2009 6:03,Product1,1200,Mastercard,United States
+192,1/10/2009 11:37,Product1,1200,Amex,United States
+193,1/20/2009 5:50,Product1,1200,Visa,United Kingdom
+194,1/19/2009 16:32,Product1,1200,Amex,United States
+195,1/18/2009 10:42,Product1,1200,Visa,United States
+196,1/7/2009 6:11,Product2,3600,Visa,France
+197,1/3/2009 8:29,Product1,1200,Visa,United Kingdom
+198,1/1/2009 2:09,Product1,1200,Mastercard,Germany
+199,1/20/2009 12:34,Product1,1200,Mastercard,United States
+200,1/20/2009 3:51,Product1,1200,Visa,Australia
+201,1/15/2009 11:26,Product1,1200,Visa,United States
+202,1/5/2009 16:55,Product1,1200,Visa,Canada
+203,1/12/2009 19:47,Product1,1200,Mastercard,United States
+204,1/4/2009 19:20,Product1,1200,Amex,United States
+205,1/10/2009 8:33,Product2,3600,Mastercard,United States
+206,1/9/2009 14:51,Product1,1200,Visa,Australia
+207,1/16/2009 2:41,Product3,7500,Visa,United States
+208,1/16/2009 18:36,Product1,1200,Visa,Australia
+209,1/20/2009 8:10,Product1,1200,Amex,United States
+210,1/6/2009 12:45,Product2,3600,Amex,United States
+211,1/10/2009 8:13,Product1,1200,Visa,United States
+212,1/7/2009 14:15,Product1,1200,Mastercard,United States
+213,1/8/2009 15:27,Product1,1200,Mastercard,United States
+214,1/21/2009 11:36,Product1,1200,Visa,Norway
+215,1/21/2009 14:06,Product1,1200,Visa,United States
+216,1/2/2009 2:28,Product1,1200,Mastercard,Australia
+217,1/19/2009 19:07,Product1,1200,Diners,United States
+218,1/18/2009 6:27,Product1,1200,Mastercard,United States
+219,1/20/2009 11:58,Product1,1200,Mastercard,United States
+220,1/20/2009 16:32,Product1,1200,Visa,United States
+221,1/1/2009 7:09,Product1,1200,Amex,United States
+222,1/21/2009 14:55,Product1,1200,Diners,United States
+223,1/7/2009 22:29,Product1,1200,Mastercard,United States
+224,1/11/2009 22:22,Product2,3600,Visa,Australia
+225,1/21/2009 14:25,Product1,1200,Visa,Netherlands
+226,1/18/2009 16:50,Product1,1200,Visa,United States
+227,1/21/2009 12:08,Product2,3600,Visa,United States
+228,1/22/2009 6:41,Product1,1200,Visa,United States
+229,1/12/2009 9:23,Product1,1200,Mastercard,United States
+230,1/22/2009 8:23,Product1,1200,Visa,United States
+231,1/3/2009 6:41,Product2,3600,Visa,Sweden
+232,1/1/2009 12:20,Product2,3600,Visa,Malta
+233,1/4/2009 22:00,Product2,3600,Amex,Germany
+234,1/21/2009 2:15,Product1,1200,Visa,United Kingdom
+235,1/1/2009 14:22,Product1,1200,Mastercard,Norway
+236,1/16/2009 1:07,Product2,3600,Diners,Ireland
+237,1/20/2009 8:51,Product1,1200,Visa,United States
+238,1/4/2009 9:02,Product1,1200,Visa,Canada
+239,1/6/2009 8:34,Product1,1200,Visa,United States
+240,1/8/2009 4:16,Product1,1200,Visa,Ireland
+241,1/23/2009 3:33,Product2,3600,Mastercard,United States
+242,1/6/2009 4:18,Product1,1200,Visa,United Kingdom
+243,1/23/2009 3:30,Product1,1200,Amex,Netherlands
+244,1/10/2009 4:04,Product1,1200,Visa,Germany
+245,1/5/2009 2:57,Product3,7500,Visa,France
+246,1/21/2009 14:15,Product1,1200,Amex,United States
+247,1/21/2009 6:39,Product1,1200,Amex,United States
+248,1/19/2009 8:14,Product1,1200,Visa,United States
+249,1/23/2009 8:00,Product1,1200,Diners,Hungary
+250,1/22/2009 23:35,Product1,1200,Mastercard,United States
+251,1/14/2009 3:09,Product1,1200,Mastercard,United Kingdom
+252,1/16/2009 1:51,Product1,1200,Visa,Austria
+253,1/1/2009 6:29,Product1,1200,Mastercard,Italy
+254,1/21/2009 7:59,Product1,1200,Visa,United States
+255,1/23/2009 7:37,Product2,3600,Amex,United States
+256,1/18/2009 14:39,Product1,1200,Visa,United States
+257,1/24/2009 9:01,Product2,3600,Visa,United Kingdom
+258,1/15/2009 1:41,Product1,1200,Diners,France
+259,1/17/2009 7:23,Product1,1200,Visa,United States
+260,1/23/2009 11:37,Product1,1200,Diners,United States
+261,1/19/2009 15:02,Product1,1200,Mastercard,United States
+262,1/11/2009 7:10,Product2,3600,Visa,United Kingdom
+263,1/10/2009 3:28,Product1,1200,Visa,Norway
+264,1/7/2009 19:03,Product2,3600,Mastercard,United States
+265,1/17/2009 14:02,Product1,1200,Visa,United States
+266,1/25/2009 0:09,Product1,1200,Visa,United States
+267,1/9/2009 14:27,Product1,1200,Visa,Ireland
+268,1/9/2009 14:32,Product1,1200,Visa,Ireland
+269,1/11/2009 15:59,Product1,1200,Visa,United Kingdom
+270,1/6/2009 14:38,Product2,3600,Mastercard,Netherlands
+271,1/6/2009 9:52,Product1,1200,Mastercard,United States
+272,1/1/2009 9:21,Product1,1200,Diners,United Kingdom
+273,1/3/2009 7:58,Product1,1200,Mastercard,Denmark
+274,1/11/2009 11:36,Product1,1200,Mastercard,United Kingdom
+275,1/13/2009 14:53,Product1,1200,Visa,United States
+276,1/1/2009 10:06,Product2,3600,Mastercard,Germany
+277,1/16/2009 5:07,Product1,1200,Amex,France
+278,1/6/2009 16:37,Product1,1200,Visa,United States
+279,1/18/2009 17:21,Product1,1200,Mastercard,United States
+280,1/13/2009 15:18,Product1,1200,Amex,United States
+281,1/24/2009 8:21,Product1,1200,Mastercard,Austria
+282,1/24/2009 8:25,Product1,1200,Mastercard,Austria
+283,1/18/2009 13:06,Product1,1200,Diners,United States
+284,1/22/2009 18:44,Product1,1200,Visa,United States
+285,1/8/2009 8:58,Product1,1200,Mastercard,United States
+286,1/4/2009 9:54,Product1,1200,Mastercard,United States
+287,1/13/2009 20:22,Product1,1200,Visa,Canada
+288,1/9/2009 10:22,Product1,1200,Mastercard,United States
+289,1/5/2009 12:28,Product1,1200,Visa,Denmark
+290,1/26/2009 3:43,Product1,1200,Mastercard,United States
+291,1/26/2009 3:49,Product2,3600,Mastercard,France
+292,1/11/2009 13:16,Product2,3600,Visa,United States
+293,1/22/2009 15:32,Product1,1200,Mastercard,Ireland
+294,1/9/2009 14:25,Product1,1200,Amex,France
+295,1/21/2009 11:28,Product1,800,Amex,United States
+296,1/1/2009 14:19,Product1,1200,Mastercard,Canada
+297,1/26/2009 4:30,Product1,1200,Visa,United States
+298,1/7/2009 4:45,Product1,1200,Amex,United Kingdom
+299,1/11/2009 12:12,Product1,1200,Visa,Ireland
+300,1/26/2009 10:24,Product1,1200,Visa,Canada
+301,1/26/2009 8:58,Product1,1200,Diners,United Kingdom
+302,1/7/2009 17:51,Product1,1200,Visa,United States
+303,1/18/2009 20:16,Product1,1200,Mastercard,United States
+304,1/13/2009 9:51,Product1,1200,Mastercard,Canada
+305,1/24/2009 18:43,Product1,1200,Visa,United States
+306,1/5/2009 0:46,Product1,1200,Amex,India
+307,1/9/2009 1:12,Product1,1200,Visa,France
+308,1/26/2009 6:25,Product1,1200,Visa,United States
+309,1/21/2009 16:57,Product1,1200,Mastercard,United States
+310,1/5/2009 5:33,Product1,1200,Mastercard,United Kingdom
+311,1/27/2009 5:10,Product1,1200,Visa,United Kingdom
+312,1/7/2009 8:00,Product1,1200,Mastercard,Germany
+313,1/20/2009 7:08,Product2,3600,Visa,United States
+314,1/27/2009 2:26,Product1,1200,Diners,United States
+315,1/5/2009 6:14,Product1,1200,Mastercard,France
+316,1/13/2009 8:11,Product2,3600,Visa,United States
+317,1/10/2009 9:18,Product1,1200,Diners,Jersey
+318,1/8/2009 18:52,Product1,1200,Visa,United States
+319,1/12/2009 10:06,Product1,1200,Mastercard,Canada
+320,1/1/2009 19:25,Product1,1200,Diners,Canada
+321,1/27/2009 15:28,Product1,1200,Visa,United States
+322,1/2/2009 18:43,Product1,1200,Visa,Ireland
+323,1/8/2009 18:41,Product1,1200,Diners,United States
+324,1/4/2009 18:34,Product1,1200,Visa,United States
+325,1/25/2009 8:32,Product1,1200,Visa,Canada
+326,1/23/2009 22:19,Product1,1200,Mastercard,Malaysia
+327,1/7/2009 10:03,Product1,1200,Mastercard,Australia
+328,1/18/2009 3:46,Product1,1200,Visa,Australia
+329,1/28/2009 0:40,Product1,1200,Mastercard,United States
+330,1/2/2009 15:18,Product1,1200,Diners,United Kingdom
+331,1/18/2009 13:59,Product1,1200,Diners,Ireland
+332,1/16/2009 9:54,Product1,1200,Mastercard,South Africa
+333,1/28/2009 7:07,Product1,1200,Visa,United Kingdom
+334,1/28/2009 7:31,Product1,1200,Visa,United States
+335,1/18/2009 12:32,Product1,1200,Visa,Ireland
+336,1/13/2009 14:05,Product1,1200,Amex,Spain
+337,1/28/2009 7:49,Product1,1200,Visa,United States
+338,1/28/2009 3:07,Product1,1200,Visa,Canada
+339,1/12/2009 15:16,Product1,1200,Visa,Iceland
+340,1/6/2009 11:17,Product2,3600,Visa,United States
+341,1/23/2009 9:49,Product1,1200,Visa,Canada
+342,1/24/2009 4:01,Product1,1200,Visa,United Kingdom
+343,1/25/2009 18:21,Product1,1200,Visa,Sweden
+344,1/15/2009 10:51,Product1,1200,Mastercard,Norway
+345,1/2/2009 5:14,Product1,1200,Visa,United Kingdom
+346,1/9/2009 10:35,Product2,3600,Visa,United States
+347,1/4/2009 10:16,Product1,1200,Mastercard,Germany
+348,1/2/2009 12:16,Product1,1200,Mastercard,United States
+349,1/28/2009 12:31,Product1,1200,Diners,United States
+350,1/14/2009 12:07,Product1,1200,Mastercard,United States
+351,1/16/2009 7:20,Product2,3600,Mastercard,France
+352,1/6/2009 9:55,Product1,1200,Mastercard,Canada
+353,1/7/2009 12:55,Product1,1200,Amex,United States
+354,1/19/2009 12:14,Product1,1200,Mastercard,Ireland
+355,1/13/2009 15:19,Product2,3600,Visa,France
+356,1/18/2009 8:56,Product1,1200,Mastercard,United States
+357,1/4/2009 17:54,Product1,1200,Amex,United States
+358,1/5/2009 13:46,Product1,1200,Visa,United States
+359,1/5/2009 10:49,Product2,3600,Amex,United States
+360,1/12/2009 18:24,Product1,1200,Diners,United States
+361,1/18/2009 4:01,Product1,1200,Visa,United States
+362,1/16/2009 10:58,Product1,1200,Visa,Denmark
+363,1/13/2009 8:20,Product1,1200,Mastercard,United Kingdom
+364,1/12/2009 1:42,Product1,1200,Mastercard,Germany
+365,1/28/2009 13:07,Product1,1200,Amex,United States
+366,1/29/2009 5:43,Product1,1200,Visa,United States
+367,1/29/2009 5:30,Product1,1200,Diners,United States
+368,1/13/2009 18:08,Product1,1200,Amex,United States
+369,1/9/2009 15:24,Product1,1200,Mastercard,United States
+370,1/23/2009 15:33,Product1,1200,Mastercard,United States
+371,1/29/2009 12:28,Product1,1200,Mastercard,United States
+372,1/13/2009 11:31,Product1,1200,Visa,United Kingdom
+373,1/29/2009 10:09,Product2,3600,Mastercard,United States
+374,1/29/2009 15:08,Product1,1200,Visa,United States
+375,1/4/2009 5:12,Product1,1200,Visa,South Korea
+376,1/22/2009 22:16,Product2,3600,Mastercard,United States
+377,1/5/2009 19:26,Product1,1200,Visa,Switzerland
+378,1/11/2009 12:22,Product1,1200,Visa,United States
+379,1/2/2009 9:31,Product1,1200,Visa,United States
+380,1/5/2009 11:21,Product1,1200,Visa,United Kingdom
+381,1/17/2009 9:49,Product1,1200,Diners,United Arab Emirates
+382,1/28/2009 1:38,Product1,1200,Mastercard,Sweden
+383,1/19/2009 10:32,Product1,1200,Mastercard,United States
+384,1/26/2009 12:05,Product1,1250,Mastercard,United States
+385,1/7/2009 18:53,Product1,1200,Visa,United States
+386,1/26/2009 11:38,Product1,1200,Mastercard,United States
+387,1/8/2009 13:19,Product1,1200,Mastercard,United States
+388,1/11/2009 14:56,Product1,1200,Visa,Norway
+389,1/30/2009 20:36,Product1,1200,Visa,United States
+390,1/1/2009 8:09,Product1,1200,Mastercard,Australia
+391,1/17/2009 11:09,Product1,1200,Mastercard,Brazil
+392,1/31/2009 7:22,Product1,1200,Visa,United States
+393,1/31/2009 9:12,Product1,1200,Visa,United Kingdom
+394,1/31/2009 8:56,Product1,1200,Mastercard,United States
+395,1/31/2009 9:00,Product1,1200,Visa,United Kingdom
+396,1/11/2009 14:07,Product1,1200,Visa,United States
+397,1/1/2009 12:25,Product2,3600,Mastercard,Switzerland
+398,1/31/2009 11:14,Product2,3600,Mastercard,United States
+399,1/2/2009 9:57,Product1,1200,Amex,United States
+400,1/4/2009 13:20,Product1,1200,Mastercard,United States
+401,1/22/2009 12:32,Product1,1200,Mastercard,United Kingdom
+402,1/18/2009 6:09,Product1,1200,Mastercard,United States
+403,1/8/2009 0:04,Product1,1200,Visa,New Zealand
+404,1/24/2009 7:14,Product1,1200,Mastercard,United States
+405,1/24/2009 11:05,Product1,1200,Visa,United States
+406,1/6/2009 15:12,Product1,1200,Amex,United States
+407,1/24/2009 17:06,Product1,1200,Visa,Canada
+408,1/3/2009 9:58,Product1,1200,Visa,United States
+409,1/9/2009 16:35,Product1,1200,Diners,Norway
+410,1/12/2009 14:50,Product1,1200,Visa,United States
+411,1/7/2009 13:49,Product1,1200,Diners,United States
+412,1/9/2009 19:41,Product1,1200,Mastercard,United States
+413,1/26/2009 4:53,Product1,1200,Visa,United Kingdom
+414,1/23/2009 21:41,Product1,1200,Visa,United States
+415,1/6/2009 16:07,Product1,1200,Visa,United States
+416,1/10/2009 7:55,Product1,1200,Visa,United Arab Emirates
+417,1/28/2009 20:44,Product1,1200,Visa,United States
+418,1/9/2009 3:38,Product1,1200,Visa,United Kingdom
+419,1/19/2009 8:52,Product1,1200,Visa,United States
+420,1/15/2009 7:26,Product1,1200,Mastercard,Netherlands
+421,1/30/2009 19:12,Product1,1200,Diners,United States
+422,1/5/2009 12:41,Product1,1200,Mastercard,United States
+423,1/28/2009 20:59,Product1,1200,Visa,United States
+424,1/10/2009 21:36,Product1,1200,Visa,United States
+425,1/25/2009 19:59,Product1,1200,Visa,United States
+426,1/7/2009 8:03,Product1,1200,Amex,Canada
+427,1/21/2009 9:07,Product1,1200,Visa,United States
+428,1/23/2009 14:43,Product1,1200,Visa,New Zealand
+429,1/5/2009 13:07,Product1,1200,Visa,United Kingdom
+430,1/6/2009 3:39,Product1,1200,Visa,Norway
+431,1/15/2009 15:26,Product1,1200,Visa,United Kingdom
+432,1/23/2009 4:47,Product1,1200,Mastercard,Ireland
+433,1/12/2009 10:05,Product2,3600,Amex,Switzerland
+434,1/30/2009 5:13,Product1,1200,Visa,Belgium
+435,1/14/2009 10:32,Product3,7500,Mastercard,Brazil
+436,1/12/2009 8:13,Product1,1200,Amex,Sweden
+437,1/27/2009 8:11,Product1,1200,Visa,United States
+438,1/30/2009 17:33,Product1,1200,Visa,Australia
+439,1/15/2009 9:52,Product1,1200,Amex,United States
+440,1/13/2009 11:54,Product1,1200,Visa,United States
+441,1/21/2009 11:00,Product1,1200,Visa,Ireland
+442,1/16/2009 11:49,Product1,1200,Mastercard,United States
+443,1/1/2009 9:35,Product1,1200,Mastercard,United States
+444,1/13/2009 5:58,Product1,1200,Mastercard,United States
+445,1/6/2009 16:08,Product2,3600,Visa,United States
+446,1/5/2009 10:25,Product1,1200,Amex,United States
+447,1/4/2009 21:08,Product1,1200,Mastercard,Canada
+448,1/12/2009 20:43,Product1,1200,Visa,United States
+449,1/17/2009 3:22,Product1,1200,Visa,United States
+450,1/18/2009 11:17,Product1,1200,Amex,United States
+451,1/27/2009 9:01,Product1,1200,Visa,Spain
+452,1/8/2009 8:11,Product1,1200,Diners,United Kingdom
+453,1/26/2009 23:28,Product2,3600,Amex,Russia
+454,1/10/2009 21:35,Product1,1200,Mastercard,Canada
+455,1/11/2009 6:01,Product1,1200,Mastercard,United States
+456,1/19/2009 14:53,Product1,1200,Mastercard,United States
+457,1/22/2009 7:14,Product1,1200,Visa,Canada
+458,1/15/2009 8:12,Product1,1200,Visa,United States
+459,1/7/2009 6:33,Product1,1200,Diners,Ireland
+460,1/12/2009 8:05,Product1,1200,Amex,United States
+461,1/28/2009 13:03,Product2,3600,Amex,Canada
+462,1/25/2009 8:54,Product1,1200,Amex,United States
+463,1/5/2009 10:08,Product1,1200,Visa,Ireland
+464,1/5/2009 19:29,Product1,1200,Visa,United States
+465,1/7/2009 19:06,Product2,3600,Amex,United States
+466,1/23/2009 11:33,Product1,1200,Mastercard,United States
+467,1/3/2009 21:11,Product1,1200,Mastercard,United States
+468,1/11/2009 17:28,Product1,1200,Visa,United States
+469,1/21/2009 20:18,Product1,1200,Amex,Canada
+470,1/24/2009 10:23,Product1,1200,Visa,United Kingdom
+471,1/7/2009 14:55,Product1,1200,Visa,Ireland
+472,1/29/2009 10:38,Product1,1200,Visa,United States
+473,1/8/2009 14:04,Product1,1200,Amex,United States
+474,1/31/2009 21:50,Product1,1200,Visa,United States
+475,1/1/2009 16:00,Product1,1200,Visa,United Kingdom
+476,1/30/2009 13:13,Product1,1200,Visa,United States
+477,1/27/2009 16:50,Product1,1200,Visa,United States
+478,1/30/2009 7:42,Product1,250,Visa,United States
+479,1/17/2009 15:48,Product2,3600,Visa,United States
+480,1/12/2009 11:40,Product2,3600,Visa,Canada
+481,1/30/2009 20:27,Product1,1200,Mastercard,United States
+482,1/27/2009 18:35,Product1,1200,Mastercard,United States
+483,1/16/2009 12:47,Product1,1200,Visa,United Kingdom
+484,1/2/2009 2:50,Product1,1200,Visa,Ireland
+485,1/21/2009 5:39,Product1,1200,Amex,United States
+486,1/28/2009 1:28,Product1,1200,Diners,France
+487,1/8/2009 13:33,Product1,1200,Visa,Monaco
+488,1/22/2009 12:09,Product1,1200,Visa,Monaco
+489,1/20/2009 8:23,Product1,1200,Mastercard,United States
+490,1/2/2009 7:47,Product1,1200,Diners,United Kingdom
+491,1/11/2009 4:55,Product1,1200,Amex,United States
+492,1/23/2009 7:47,Product1,1800,Amex,United States
+493,1/21/2009 23:19,Product1,1200,Amex,United States
+494,1/11/2009 4:29,Product3,7500,Visa,United States
+495,1/11/2009 4:39,Product1,1200,Visa,United States
+496,1/10/2009 8:13,Product1,1200,Mastercard,United Kingdom
+497,1/22/2009 12:55,Product1,1200,Visa,France
+498,1/17/2009 15:00,Product1,1200,Visa,United States
+499,1/4/2009 14:06,Product1,1200,Visa,United States
+500,1/30/2009 17:09,Product1,1200,Mastercard,Hong Kong
+501,1/20/2009 5:01,Product1,1200,Visa,United States
+502,1/26/2009 14:37,Product1,1200,Visa,United States
+503,1/29/2009 13:27,Product1,1200,Visa,United States
+504,1/12/2009 10:33,Product1,1200,Amex,United States
+505,1/5/2009 8:28,Product1,1200,Visa,Switzerland
+506,1/25/2009 16:11,Product3,7500,Visa,United States
+507,1/25/2009 20:44,Product1,1200,Visa,United States
+508,1/26/2009 11:36,Product1,1200,Visa,Ireland
+509,1/27/2009 2:32,Product1,1200,Visa,United Kingdom
+510,1/18/2009 13:36,Product1,1200,Amex,United Kingdom
+511,1/7/2009 5:53,Product1,1200,Visa,Germany
+512,1/25/2009 1:53,Product3,7500,Visa,South Africa
+513,1/18/2009 11:42,Product1,1200,Visa,United Kingdom
+514,1/13/2009 1:46,Product1,1200,Mastercard,Denmark
+515,1/2/2009 15:57,Product1,1200,Diners,United States
+516,1/25/2009 8:50,Product1,1200,Mastercard,Switzerland
+517,1/14/2009 8:16,Product2,3600,Amex,Canada
+518,1/27/2009 11:21,Product1,1200,Mastercard,United States
+519,1/8/2009 10:13,Product1,1200,Diners,Canada
+520,1/5/2009 7:47,Product1,1200,Amex,Switzerland
+521,1/22/2009 9:00,Product1,1200,Visa,United States
+522,1/25/2009 12:59,Product1,1200,Visa,United States
+523,1/10/2009 19:28,Product2,3600,Visa,United States
+524,1/8/2009 19:29,Product2,3600,Mastercard,Thailand
+525,1/8/2009 12:04,Product1,1200,Visa,United States
+526,1/4/2009 16:59,Product1,1200,Visa,Australia
+527,1/30/2009 11:56,Product1,1200,Mastercard,United Kingdom
+528,1/6/2009 5:10,Product1,1200,Visa,Austria
+529,1/14/2009 3:39,Product1,1200,Visa,Ireland
+530,1/14/2009 3:47,Product1,1200,Visa,Ireland
+531,1/19/2009 3:19,Product1,1200,Mastercard,Bulgaria
+532,1/7/2009 1:42,Product1,1200,Mastercard,Latvia
+533,1/7/2009 13:01,Product2,3600,Visa,Switzerland
+534,1/27/2009 2:35,Product1,1200,Visa,France
+535,1/3/2009 14:14,Product1,1200,Visa,United States
+536,1/22/2009 12:37,Product2,3600,Amex,United States
+537,1/29/2009 6:49,Product1,1200,Mastercard,Germany
+538,1/6/2009 9:45,Product1,1200,Diners,United States
+539,1/12/2009 11:16,Product1,1200,Visa,Spain
+540,1/13/2009 13:49,Product1,1200,Visa,Ireland
+541,1/12/2009 7:23,Product1,1200,Visa,United States
+542,1/30/2009 4:48,Product1,1200,Visa,United States
+543,1/22/2009 16:29,Product1,1200,Visa,United States
+544,1/27/2009 6:26,Product1,1200,Mastercard,United States
+545,1/15/2009 10:16,Product3,7500,Visa,United States
+546,1/19/2009 18:54,Product1,1200,Amex,United States
+547,1/2/2009 22:44,Product2,3600,Visa,Australia
+548,1/1/2009 18:32,Product1,1200,Amex,United States
+549,1/14/2009 1:28,Product1,1200,Mastercard,United Kingdom
+550,1/20/2009 8:08,Product1,1200,Mastercard,Hungary
+551,1/29/2009 2:48,Product1,1200,Visa,Denmark
+552,1/24/2009 18:02,Product1,1200,Visa,United States
+553,1/7/2009 8:26,Product1,1200,Diners,United States
+554,1/24/2009 3:36,Product1,1200,Visa,Denmark
+555,1/5/2009 15:23,Product1,1200,Visa,United Kingdom
+556,1/25/2009 16:17,Product1,1200,Amex,United States
+557,1/15/2009 10:37,Product1,1200,Visa,United States
+558,1/20/2009 15:28,Product1,1200,Visa,United States
+559,1/28/2009 18:00,Product1,"13,000",Visa,United States
+560,1/29/2009 5:06,Product1,1200,Amex,United States
+561,1/6/2009 18:53,Product1,1200,Visa,United States
+562,1/21/2009 6:55,Product1,1200,Visa,United States
+563,1/26/2009 20:18,Product1,1200,Mastercard,Australia
+564,1/25/2009 17:58,Product2,3600,Visa,United States
+565,1/9/2009 14:37,Product1,1200,Visa,United States
+566,1/25/2009 2:46,Product2,3600,Visa,United Arab Emirates
+567,1/17/2009 20:46,Product2,3600,Visa,United Arab Emirates
+568,1/24/2009 7:18,Product2,3600,Visa,United Kingdom
+569,1/11/2009 7:09,Product1,1200,Visa,Ireland
+570,1/8/2009 4:15,Product1,1200,Visa,Poland
+571,1/22/2009 10:47,Product1,1200,Visa,Ireland
+572,1/26/2009 20:47,Product1,1200,Mastercard,United States
+573,1/12/2009 12:22,Product1,1200,Mastercard,Sweden
+574,1/26/2009 1:44,Product2,3600,Visa,Belgium
+575,1/18/2009 12:57,Product1,1200,Mastercard,United States
+576,1/24/2009 21:26,Product1,1200,Visa,United States
+577,1/26/2009 12:26,Product2,3600,Mastercard,United States
+578,1/5/2009 7:37,Product1,1200,Visa,United States
+579,1/14/2009 12:33,Product1,1200,Visa,United Kingdom
+580,1/14/2009 0:15,Product2,3600,Visa,France
+581,1/1/2009 12:42,Product1,1200,Visa,United Kingdom
+582,1/6/2009 6:07,Product1,1200,Visa,Denmark
+583,1/15/2009 5:11,Product2,3600,Visa,United Kingdom
+584,1/17/2009 4:03,Product1,1200,Visa,Philippines
+585,1/19/2009 10:13,Product2,3600,Mastercard,United Kingdom
+586,1/18/2009 9:42,Product1,1200,Visa,United States
+587,1/9/2009 11:14,Product1,1200,Visa,United States
+588,1/10/2009 13:42,Product1,1200,Visa,Canada
+589,1/7/2009 7:28,Product1,1200,Amex,United States
+590,1/18/2009 6:46,Product1,1200,Visa,Ireland
+591,1/30/2009 12:18,Product1,1200,Mastercard,United States
+592,1/6/2009 5:42,Product1,1200,Amex,United States
+593,1/2/2009 10:58,Product2,3600,Visa,Canada
+594,1/8/2009 3:29,Product1,1200,Visa,United Kingdom
+595,1/12/2009 13:23,Product2,3600,Amex,Italy
+596,1/19/2009 9:34,Product1,1200,Amex,United States
+597,1/9/2009 7:49,Product1,1200,Visa,United States
+598,1/15/2009 5:27,Product2,3600,Visa,Canada
+599,1/8/2009 23:40,Product1,1200,Visa,Australia
+600,1/27/2009 11:02,Product1,1200,Mastercard,Spain
+601,1/14/2009 13:23,Product1,1200,Diners,United States
+602,1/7/2009 20:01,Product1,1200,Visa,United States
+603,1/20/2009 12:32,Product1,1200,Visa,United States
+604,1/6/2009 14:35,Product1,1200,Diners,United States
+605,1/4/2009 6:51,Product1,1200,Visa,Ireland
+606,1/24/2009 18:30,Product1,1200,Visa,Australia
+607,1/25/2009 5:57,Product1,1200,Amex,Argentina
+608,1/5/2009 10:02,Product2,3600,Visa,United States
+609,1/13/2009 9:14,Product1,1200,Visa,Norway
+610,1/22/2009 7:35,Product1,1200,Visa,France
+611,1/2/2009 11:06,Product1,1200,Mastercard,Spain
+612,1/11/2009 9:50,Product1,1200,Visa,Germany
+613,1/21/2009 20:44,Product1,1200,Mastercard,United States
+614,1/5/2009 9:09,Product1,1200,Visa,United States
+615,1/5/2009 12:41,Product1,1200,Visa,Canada
+616,1/28/2009 12:54,Product2,3600,Mastercard,Canada
+617,1/21/2009 4:46,Product1,1200,Visa,Denmark
+618,1/7/2009 13:28,Product1,1200,Visa,United Kingdom
+619,1/27/2009 11:18,Product2,3600,Amex,United States
+620,1/7/2009 12:39,Product2,3600,Visa,Italy
+621,1/24/2009 13:54,Product2,3600,Mastercard,Switzerland
+622,1/30/2009 6:48,Product1,1200,Mastercard,United States
+623,1/22/2009 18:07,Product1,1200,Visa,United States
+624,1/29/2009 15:03,Product1,1200,Visa,New Zealand
+625,1/2/2009 14:14,Product1,1200,Diners,United Kingdom
+626,1/19/2009 11:05,Product1,1200,Visa,United States
+627,1/28/2009 16:17,Product1,1200,Mastercard,United Kingdom
+628,1/8/2009 12:46,Product1,1200,Mastercard,Canada
+629,1/29/2009 16:07,Product1,1200,Diners,France
+630,1/29/2009 13:41,Product1,1200,Visa,United States
+631,1/8/2009 6:29,Product1,1200,Visa,Germany
+632,1/4/2009 12:53,Product1,1200,Diners,United Kingdom
+633,1/14/2009 12:55,Product1,1200,Visa,Switzerland
+634,1/14/2009 6:35,Product1,1200,Visa,Australia
+635,1/27/2009 13:08,Product1,1200,Mastercard,Switzerland
+636,1/31/2009 23:09,Product1,1200,Diners,Australia
+637,1/21/2009 14:34,Product1,1200,Mastercard,Austria
+638,1/16/2009 8:28,Product1,1200,Visa,United States
+639,1/11/2009 9:55,Product1,1200,Visa,Canada
+640,1/8/2009 2:46,Product1,1200,Mastercard,United Kingdom
+641,1/26/2009 7:11,Product1,1200,Visa,United States
+642,1/31/2009 5:39,Product2,3600,Mastercard,United States
+643,1/9/2009 8:35,Product1,1200,Amex,Canada
+644,1/24/2009 3:25,Product1,1200,Visa,Australia
+645,1/26/2009 8:45,Product1,1200,Visa,United States
+646,1/23/2009 10:45,Product1,1200,Visa,United States
+647,1/28/2009 8:50,Product1,1200,Visa,United States
+648,1/15/2009 19:10,Product2,3600,Diners,United States
+649,1/9/2009 20:25,Product1,1200,Diners,Canada
+650,1/15/2009 21:53,Product1,1200,Visa,Canada
+651,1/12/2009 0:17,Product1,1200,Mastercard,Denmark
+652,1/25/2009 10:32,Product1,1200,Mastercard,Italy
+653,1/12/2009 23:35,Product1,1200,Visa,Australia
+654,1/11/2009 6:09,Product1,1200,Amex,United States
+655,1/3/2009 13:35,Product1,1200,Mastercard,Switzerland
+656,1/18/2009 11:03,Product2,3600,Amex,Spain
+657,1/5/2009 18:55,Product1,1200,Visa,United States
+658,1/2/2009 18:54,Product1,1200,Mastercard,United States
+659,1/13/2009 14:44,Product2,3600,Visa,Switzerland
+660,1/4/2009 4:05,Product1,1200,Mastercard,United Kingdom
+661,1/27/2009 12:47,Product1,1200,Visa,Netherlands
+662,1/22/2009 6:51,Product1,1200,Visa,United States
+663,1/1/2009 21:40,Product1,1200,Mastercard,Australia
+664,1/27/2009 18:06,Product1,1200,Visa,The Bahamas
+665,1/10/2009 14:59,Product1,1200,Amex,United States
+666,1/26/2009 15:42,Product1,1200,Visa,United States
+667,1/12/2009 14:37,Product1,1200,Mastercard,France
+668,1/16/2009 7:58,Product1,1200,Amex,Netherlands
+669,1/22/2009 14:32,Product1,1200,Visa,Australia
+670,1/19/2009 6:50,Product1,1200,Visa,United Kingdom
+671,1/24/2009 11:54,Product1,1200,Visa,Belgium
+672,1/13/2009 13:36,Product1,1200,Visa,United Kingdom
+673,1/13/2009 11:56,Product1,1200,Diners,Canada
+674,1/19/2009 7:49,Product1,1200,Amex,United States
+675,1/10/2009 7:37,Product1,1200,Visa,Ireland
+676,1/20/2009 5:53,Product1,1200,Diners,United Kingdom
+677,1/6/2009 10:34,Product1,1200,Mastercard,United States
+678,1/23/2009 5:14,Product1,1200,Visa,Australia
+679,1/14/2009 16:02,Product1,1200,Mastercard,United States
+680,1/14/2009 18:05,Product1,1200,Visa,United States
+681,1/8/2009 20:52,Product1,1200,Visa,United States
+682,1/7/2009 13:57,Product1,1200,Visa,New Zealand
+683,1/25/2009 10:34,Product1,1200,Amex,United States
+684,1/28/2009 4:35,Product1,1200,Diners,Norway
+685,1/19/2009 3:25,Product1,1200,Visa,Japan
+686,1/18/2009 0:41,Product2,3600,Visa,Germany
+687,1/27/2009 2:38,Product1,1200,Visa,Ireland
+688,1/16/2009 6:04,Product1,1200,Mastercard,Germany
+689,1/5/2009 5:30,Product1,1200,Visa,France
+690,1/9/2009 14:55,Product1,1200,Visa,United Kingdom
+691,1/29/2009 10:07,Product1,1200,Visa,United States
+692,1/27/2009 3:55,Product1,1200,Amex,Sweden
+693,1/25/2009 12:35,Product2,3600,Visa,United States
+694,1/3/2009 16:56,Product1,1200,Visa,United States
+695,1/12/2009 12:04,Product1,1200,Visa,Sweden
+696,1/27/2009 3:19,Product1,1200,Mastercard,United Kingdom
+697,1/24/2009 9:30,Product1,1200,Visa,Switzerland
+698,1/25/2009 18:33,Product1,1200,Visa,United States
+699,1/15/2009 11:43,Product1,1200,Visa,United States
+700,1/23/2009 16:30,Product2,3600,Amex,United States
+701,1/5/2009 12:57,Product1,1200,Diners,United States
+702,1/29/2009 16:52,Product1,1200,Visa,United States
+703,1/10/2009 0:04,Product1,1200,Mastercard,United States
+704,1/3/2009 14:17,Product2,3600,Visa,Australia
+705,1/15/2009 9:00,Product1,1200,Visa,The Bahamas
+706,1/24/2009 20:58,Product1,1200,Visa,Canada
+707,1/10/2009 11:53,Product1,1200,Visa,Germany
+708,1/4/2009 17:34,Product1,1200,Mastercard,Australia
+709,1/28/2009 0:22,Product1,1200,Visa,Switzerland
+710,1/17/2009 1:49,Product1,1200,Mastercard,Netherlands
+711,1/25/2009 17:48,Product1,1200,Visa,United States
+712,1/22/2009 5:39,Product2,3600,Visa,United Kingdom
+713,1/19/2009 15:40,Product2,3600,Visa,Netherlands
+714,1/21/2009 23:52,Product1,1200,Visa,Switzerland
+715,1/19/2009 13:15,Product1,1200,Visa,Sweden
+716,1/16/2009 7:35,Product1,1200,Diners,Germany
+717,1/22/2009 9:48,Product2,3600,Mastercard,United Kingdom
+718,1/18/2009 12:05,Product2,3600,Visa,United States
+719,1/4/2009 10:44,Product1,1200,Diners,Canada
+720,1/20/2009 14:55,Product1,1200,Mastercard,United States
+721,1/2/2009 18:41,Product1,1200,Visa,United States
+722,1/2/2009 7:03,Product1,1200,Visa,United Kingdom
+723,1/21/2009 7:19,Product1,1200,Visa,United States
+724,1/11/2009 17:52,Product2,3600,Visa,United States
+725,1/16/2009 17:56,Product1,1200,Mastercard,United States
+726,1/9/2009 20:00,Product1,1200,Visa,United States
+727,1/13/2009 2:47,Product1,1200,Visa,Ireland
+728,1/19/2009 4:23,Product2,3600,Mastercard,Italy
+729,1/13/2009 12:51,Product1,1200,Visa,Denmark
+730,1/29/2009 7:40,Product1,1200,Amex,Germany
+731,1/21/2009 4:34,Product1,1200,Visa,Italy
+732,1/7/2009 13:28,Product1,1200,Mastercard,Ireland
+733,1/26/2009 16:47,Product1,1200,Visa,France
+734,1/29/2009 1:01,Product1,1200,Diners,Switzerland
+735,1/25/2009 12:55,Product1,1200,Amex,United States
+736,1/24/2009 13:35,Product1,1200,Visa,United States
+737,1/28/2009 13:30,Product1,1200,Visa,United States
+738,1/20/2009 19:08,Product1,1200,Amex,United States
+739,1/29/2009 17:13,Product1,1200,Amex,United States
+740,1/2/2009 5:33,Product1,1200,Visa,United Kingdom
+741,1/31/2009 11:03,Product1,1200,Visa,Sweden
+742,1/13/2009 9:16,Product1,1200,Visa,United States
+743,1/19/2009 12:38,Product1,1200,Visa,Germany
+744,1/18/2009 12:14,Product2,3600,Mastercard,Netherlands
+745,1/22/2009 10:59,Product1,1200,Visa,United States
+746,1/14/2009 7:30,Product1,1200,Visa,Spain
+747,1/19/2009 1:52,Product1,1200,Amex,Australia
+748,1/8/2009 23:00,Product1,1200,Visa,Turkey
+749,1/25/2009 7:29,Product1,1200,Diners,United Kingdom
+750,1/17/2009 15:19,Product1,1200,Visa,Ireland
+751,1/23/2009 12:23,Product1,1200,Mastercard,Netherlands
+752,1/24/2009 8:45,Product1,1200,Visa,United States
+753,1/27/2009 3:45,Product2,3600,Visa,Switzerland
+754,1/29/2009 23:48,Product1,1200,Visa,United Kingdom
+755,1/3/2009 18:43,Product1,1200,Visa,Canada
+756,1/24/2009 17:18,Product2,3600,Visa,United States
+757,1/2/2009 15:13,Product1,1200,Visa,Ireland
+758,1/8/2009 10:44,Product1,1200,Visa,Canada
+759,1/29/2009 8:13,Product1,1200,Mastercard,United States
+760,1/24/2009 10:26,Product1,1200,Visa,Brazil
+761,1/24/2009 12:56,Product1,1200,Visa,Canada
+762,1/7/2009 13:38,Product1,1200,Mastercard,Germany
+763,1/23/2009 15:38,Product1,1200,Visa,United States
+764,1/26/2009 14:43,Product1,1200,Visa,Ireland
+765,1/17/2009 20:33,Product1,1200,Amex,United States
+766,1/5/2009 9:15,Product1,1200,Visa,Canada
+767,1/20/2009 8:16,Product1,1200,Mastercard,United States
+768,1/29/2009 12:46,Product1,1200,Visa,Ireland
+769,1/15/2009 18:12,Product1,1200,Diners,United States
+770,1/23/2009 13:55,Product1,1200,Mastercard,United States
+771,1/26/2009 10:26,Product1,1200,Visa,Canada
+772,1/12/2009 11:48,Product1,1200,Mastercard,United States
+773,1/29/2009 15:20,Product1,1200,Mastercard,United States
+774,1/28/2009 7:26,Product1,1200,Visa,Canada
+775,1/14/2009 0:03,Product2,3600,Mastercard,Australia
+776,1/13/2009 1:55,Product1,1200,Mastercard,Germany
+777,1/12/2009 23:21,Product1,1200,Mastercard,Switzerland
+778,1/22/2009 2:16,Product1,1200,Visa,Turkey
+779,1/29/2009 12:53,Product1,1200,Visa,France
+780,1/28/2009 11:36,Product1,1200,Diners,Germany
+781,1/19/2009 6:50,Product1,1200,Amex,Belgium
+782,1/30/2009 5:20,Product1,1200,Visa,Ireland
+783,1/19/2009 14:06,Product1,1200,Mastercard,United States
+784,1/8/2009 9:43,Product1,1200,Visa,France
+785,1/23/2009 9:09,Product2,3600,Amex,Sweden
+786,1/20/2009 8:58,Product1,1200,Visa,Canada
+787,1/2/2009 13:35,Product1,1200,Visa,France
+788,1/9/2009 15:03,Product1,1200,Visa,United States
+789,1/23/2009 7:04,Product1,1200,Amex,United States
+790,1/17/2009 10:14,Product1,1200,Mastercard,Canada
+791,1/19/2009 16:16,Product1,1200,Mastercard,United States
+792,1/20/2009 13:54,Product1,1200,Mastercard,Australia
+793,1/23/2009 21:35,Product1,1200,Visa,Australia
+794,1/21/2009 23:41,Product1,1200,Visa,France
+795,1/21/2009 4:11,Product1,1200,Visa,Czech Republic
+796,1/10/2009 3:43,Product1,1200,Visa,Germany
+797,1/15/2009 18:08,Product2,3600,Amex,United States
+798,1/20/2009 14:48,Product2,3600,Visa,Sweden
+799,1/21/2009 11:56,Product1,1200,Visa,Switzerland
+800,1/30/2009 6:18,Product2,3600,Mastercard,Switzerland
+801,1/12/2009 17:28,Product1,1200,Amex,United States
+802,1/29/2009 8:27,Product2,3600,Visa,Czech Republic
+803,1/24/2009 12:43,Product1,1200,Visa,United States
+804,1/7/2009 10:49,Product2,3600,Visa,United States
+805,1/11/2009 17:06,Product1,1200,Visa,United States
+806,1/30/2009 6:17,Product1,1200,Visa,Ireland
+807,1/7/2009 10:52,Product1,1200,Visa,Ireland
+808,1/27/2009 6:20,Product1,1200,Mastercard,United States
+809,1/21/2009 20:02,Product1,1200,Mastercard,Cayman Isls
+810,1/4/2009 16:23,Product1,1200,Visa,United States
+811,1/6/2009 12:26,Product1,1200,Visa,United States
+812,1/11/2009 4:34,Product1,1200,Visa,United Kingdom
+813,1/17/2009 6:39,Product1,1200,Diners,United Kingdom
+814,1/4/2009 3:41,Product1,1200,Mastercard,Netherlands
+815,1/12/2009 5:50,Product3,7500,Mastercard,Netherlands
+816,1/3/2009 13:43,Product1,1200,Mastercard,Ireland
+817,1/11/2009 6:51,Product1,1200,Visa,Ukraine
+818,1/17/2009 6:23,Product1,1200,Visa,Italy
+819,1/26/2009 18:38,Product1,1200,Visa,United States
+820,1/31/2009 13:26,Product1,1200,Visa,Canada
+821,1/21/2009 2:20,Product2,3600,Visa,Switzerland
+822,1/18/2009 13:25,Product1,1200,Visa,United States
+823,1/18/2009 18:57,Product1,1200,Mastercard,United States
+824,1/31/2009 1:59,Product1,1200,Visa,Italy
+825,1/25/2009 16:08,Product1,1200,Diners,Canada
+826,1/16/2009 19:13,Product1,1200,Diners,United States
+827,1/31/2009 15:25,Product1,1200,Visa,United States
+828,1/9/2009 8:57,Product1,1200,Diners,United States
+829,1/4/2009 22:18,Product2,3600,Mastercard,Canada
+830,1/10/2009 15:18,Product2,3600,Mastercard,United States
+831,1/16/2009 19:47,Product1,1200,Amex,United States
+832,1/25/2009 8:16,Product2,3600,Visa,Norway
+833,1/25/2009 8:48,Product1,1200,Mastercard,United Kingdom
+834,1/17/2009 9:12,Product1,1200,Amex,United States
+835,1/24/2009 1:22,Product1,1200,Visa,Italy
+836,1/27/2009 15:09,Product1,1200,Visa,United States
+837,1/25/2009 21:49,Product1,1200,Mastercard,United States
+838,1/24/2009 8:51,Product1,1200,Mastercard,Philippines
+839,1/6/2009 14:08,Product1,1200,Mastercard,Belgium
+840,1/17/2009 14:06,Product1,1200,Amex,United States
+841,1/21/2009 12:38,Product1,1200,Visa,Turkey
+842,1/30/2009 23:49,Product2,3600,Visa,Netherlands
+843,1/12/2009 12:00,Product1,1200,Mastercard,United States
+844,1/29/2009 21:40,Product1,1200,Visa,Canada
+845,1/24/2009 13:38,Product1,1200,Mastercard,United Kingdom
+846,1/25/2009 13:50,Product2,3600,Visa,Switzerland
+847,1/12/2009 13:41,Product1,1200,Amex,United Kingdom
+848,1/5/2009 11:44,Product1,1200,Visa,Denmark
+849,1/2/2009 8:31,Product1,1200,Visa,Hungary
+850,1/31/2009 7:13,Product1,1200,Amex,United Kingdom
+851,1/20/2009 2:17,Product1,1200,Diners,Dominican Republic
+852,1/25/2009 20:15,Product1,1200,Visa,United States
+853,1/25/2009 19:44,Product1,1200,Mastercard,Brazil
+854,1/30/2009 9:00,Product1,1200,Mastercard,United States
+855,1/7/2009 19:18,Product1,1200,Mastercard,Canada
+856,1/4/2009 10:18,Product1,1200,Mastercard,United States
+857,1/23/2009 14:57,Product1,1200,Mastercard,United States
+858,1/12/2009 10:08,Product2,3600,Mastercard,United States
+859,1/19/2009 4:22,Product1,1200,Diners,France
+860,1/21/2009 21:37,Product1,1200,Visa,China
+861,1/25/2009 4:34,Product1,1200,Mastercard,Netherlands
+862,1/30/2009 1:09,Product1,1200,Mastercard,Switzerland
+863,1/26/2009 15:16,Product1,1200,Visa,United States
+864,1/15/2009 15:56,Product2,3600,Visa,United States
+865,1/2/2009 20:47,Product1,1200,Visa,United States
+866,1/25/2009 9:36,Product1,1200,Visa,United States
+867,1/20/2009 20:09,Product1,1200,Visa,United Arab Emirates
+868,1/8/2009 11:14,Product2,3600,Visa,Switzerland
+869,1/6/2009 20:39,Product2,3600,Mastercard,Canada
+870,1/6/2009 18:10,Product1,1200,Visa,United States
+871,1/11/2009 6:46,Product2,3600,Visa,Ireland
+872,1/19/2009 14:26,Product1,1200,Mastercard,Ireland
+873,1/31/2009 6:14,Product1,1200,Diners,United States
+874,1/6/2009 9:31,Product1,1200,Visa,United States
+875,1/21/2009 7:31,Product1,1200,Mastercard,United States
+876,1/20/2009 17:23,Product2,3600,Visa,Canada
+877,1/29/2009 12:10,Product1,1200,Amex,United States
+878,1/24/2009 23:21,Product1,1200,Visa,Thailand
+879,1/28/2009 10:37,Product1,1200,Visa,Greece
+880,1/30/2009 14:36,Product1,1200,Visa,Switzerland
+881,1/21/2009 2:07,Product1,1200,Mastercard,United Kingdom
+882,1/26/2009 6:37,Product1,1200,Visa,Switzerland
+883,1/4/2009 14:27,Product1,1200,Visa,United Kingdom
+884,1/9/2009 3:03,Product2,3600,Amex,France
+885,1/8/2009 19:26,Product2,3600,Visa,United States
+886,1/10/2009 16:02,Product1,1200,Visa,United States
+887,1/6/2009 6:31,Product1,1200,Visa,Belgium
+888,1/23/2009 13:13,Product1,1200,Mastercard,United States
+889,1/18/2009 17:55,Product1,1200,Amex,Brazil
+890,1/5/2009 15:15,Product1,1200,Amex,United Kingdom
+891,1/2/2009 10:32,Product1,1200,Mastercard,Canada
+892,1/25/2009 9:27,Product1,1200,Visa,United Kingdom
+893,1/5/2009 6:12,Product1,1200,Diners,Italy
+894,1/6/2009 2:41,Product1,1200,Visa,Australia
+895,1/27/2009 14:42,Product2,3600,Mastercard,United States
+896,1/8/2009 12:03,Product1,1200,Diners,Canada
+897,1/29/2009 12:16,Product1,1200,Mastercard,United States
+898,1/19/2009 10:47,Product1,1200,Mastercard,Norway
+899,1/8/2009 2:49,Product2,3600,Mastercard,Switzerland
+900,1/19/2009 17:40,Product1,1200,Visa,United States
+901,1/11/2009 0:15,Product1,1200,Mastercard,Netherlands
+902,1/16/2009 5:12,Product2,3600,Visa,Switzerland
+903,1/19/2009 6:52,Product1,1200,Diners,Costa Rica
+904,1/26/2009 1:14,Product1,1200,Visa,Spain
+905,1/30/2009 10:31,Product1,1200,Mastercard,United States
+906,1/23/2009 5:52,Product1,1200,Amex,Switzerland
+907,1/7/2009 9:54,Product1,1200,Visa,United Kingdom
+908,1/1/2009 16:44,Product1,1200,Amex,United States
+909,1/23/2009 9:27,Product1,1200,Mastercard,Spain
+910,1/22/2009 12:56,Product1,1200,Visa,Norway
+911,1/16/2009 13:35,Product1,1200,Visa,Italy
+912,1/13/2009 9:26,Product1,1200,Visa,Switzerland
+913,1/25/2009 11:35,Product3,7500,Mastercard,United States
+914,1/26/2009 14:02,Product1,1200,Mastercard,United States
+915,1/7/2009 13:26,Product1,1200,Visa,Canada
+916,1/15/2009 11:45,Product1,1200,Diners,United Kingdom
+917,1/27/2009 12:02,Product1,1200,Visa,Ireland
+918,1/28/2009 14:09,Product1,1200,Visa,Poland
+919,1/23/2009 7:13,Product1,1200,Visa,Bermuda
+920,1/22/2009 15:59,Product2,3600,Visa,Canada
+921,1/16/2009 10:27,Product1,1200,Mastercard,United States
+922,1/26/2009 22:45,Product1,1200,Amex,Japan
+923,1/25/2009 18:33,Product1,1200,Mastercard,United States
+924,1/16/2009 6:13,Product1,1200,Mastercard,South Africa
+925,1/12/2009 17:19,Product2,3600,Diners,United States
+926,1/2/2009 4:21,Product1,1200,Visa,Norway
+927,1/5/2009 3:03,Product1,1200,Diners,Ireland
+928,1/15/2009 15:22,Product1,1200,Visa,United States
+929,1/26/2009 5:38,Product2,3600,Amex,United States
+930,1/24/2009 10:38,Product1,1200,Visa,United States
+931,1/2/2009 7:30,Product1,1200,Mastercard,United States
+932,1/26/2009 6:38,Product1,1200,Visa,United States
+933,1/17/2009 7:56,Product3,7500,Diners,Italy
+934,1/17/2009 7:58,Product3,7500,Diners,Italy
+935,1/18/2009 4:32,Product1,1200,Diners,Italy
+936,1/26/2009 8:00,Product1,1200,Amex,United States
+937,1/11/2009 8:41,Product1,1200,Amex,United States
+938,1/21/2009 10:32,Product1,1200,Mastercard,United States
+939,1/29/2009 12:27,Product1,1200,Mastercard,Ireland
+940,1/13/2009 13:19,Product2,3600,Mastercard,Canada
+941,1/31/2009 18:12,Product1,1200,Visa,United States
+942,1/22/2009 15:35,Product1,1200,Visa,United States
+943,1/5/2009 11:24,Product1,1200,Amex,United States
+944,1/23/2009 11:23,Product1,1200,Mastercard,United States
+945,1/7/2009 20:55,Product1,1200,Mastercard,United States
+946,1/13/2009 9:40,Product1,1200,Visa,United States
+947,1/25/2009 15:18,Product2,3600,Visa,United States
+948,1/30/2009 20:58,Product2,3600,Mastercard,Canada
+949,1/31/2009 4:50,Product1,1200,Mastercard,Sweden
+950,1/20/2009 10:05,Product2,3600,Visa,Canada
+951,1/9/2009 5:15,Product1,1200,Visa,Spain
+952,1/13/2009 7:09,Product2,3600,Amex,United States
+953,1/3/2009 11:03,Product1,1200,Mastercard,United States
+954,1/17/2009 20:51,Product1,1200,Visa,New Zealand
+955,1/5/2009 7:55,Product1,1200,Mastercard,United States
+956,1/25/2009 14:40,Product1,1200,Visa,United States
+957,1/25/2009 17:55,Product1,1200,Visa,United States
+958,1/3/2009 12:54,Product1,1200,Diners,United States
+959,1/22/2009 3:57,Product2,3600,Mastercard,Netherlands
+960,1/23/2009 5:11,Product1,1200,Visa,Ireland
+961,1/25/2009 11:52,Product2,3600,Mastercard,Austria
+962,1/10/2009 4:12,Product1,1200,Visa,Ireland
+963,1/10/2009 9:32,Product2,3600,Mastercard,United States
+964,1/22/2009 12:45,Product3,7500,Visa,United States
+965,1/6/2009 18:11,Product2,3600,Mastercard,United States
+966,1/19/2009 5:56,Product1,1200,Visa,United Kingdom
+967,1/25/2009 10:50,Product1,1200,Diners,United States
+968,1/14/2009 8:38,Product1,1200,Visa,United States
+969,1/2/2009 17:24,Product2,3600,Diners,Australia
+970,1/7/2009 18:15,Product1,1200,Mastercard,United States
+971,1/3/2009 21:19,Product1,1200,Visa,United States
+972,1/4/2009 5:13,Product1,1200,Visa,Czech Republic
+973,1/4/2009 9:28,Product1,1200,Visa,United Kingdom
+974,1/2/2009 4:34,Product1,1200,Visa,United Kingdom
+975,1/22/2009 11:10,Product1,1200,Mastercard,Romania
+976,1/7/2009 12:06,Product1,1200,Visa,Malta
+977,1/29/2009 13:25,Product1,1200,Diners,United States
+978,1/27/2009 2:57,Product1,1200,Visa,United Kingdom
+979,1/7/2009 13:19,Product1,1200,Visa,Turkey
+980,1/23/2009 10:04,Product1,1200,Mastercard,United States
+981,1/19/2009 4:55,Product1,1200,Visa,United Kingdom
+982,1/28/2009 22:02,Product1,1200,Visa,New Zealand
+983,1/4/2009 18:57,Product1,1200,Mastercard,Australia
+984,1/12/2009 20:31,Product1,1200,Visa,Guatemala
+985,1/24/2009 12:00,Product1,1200,Visa,Spain
+986,1/28/2009 11:19,Product1,1200,Visa,United States
+987,1/7/2009 17:48,Product1,1200,Mastercard,United States
+988,1/23/2009 12:42,Product2,3600,Mastercard,Australia
+989,1/7/2009 19:48,Product2,3600,Mastercard,Australia
+990,1/26/2009 11:19,Product1,1200,Mastercard,Finland
+991,1/5/2009 13:23,Product1,1200,Visa,Austria
+992,1/26/2009 13:41,Product1,1200,Mastercard,Switzerland
+993,1/20/2009 10:42,Product2,3600,Diners,United Kingdom
+994,1/22/2009 14:25,Product1,1200,Visa,United Kingdom
+995,1/28/2009 5:36,Product2,3600,Visa,Mauritius
+996,1/1/2009 4:24,Product3,7500,Amex,United States
+997,1/8/2009 11:55,Product1,1200,Diners,United Kingdom
+998,1/12/2009 21:30,Product1,1200,Visa,United States

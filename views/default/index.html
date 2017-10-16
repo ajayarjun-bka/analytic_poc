@@ -1,0 +1,238 @@
+<html>
+
+<head>
+    <title>POC DASHBOARD</title>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <link rel="icon" type="image/png" href="static/images/favicon.ico"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:100" type="text/css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/css/materialize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
+</head>
+<style type="text/css">
+    ul.dropdown-content.select-dropdown {
+        max-height: 300px !important;
+    }
+
+    @font-face {
+        font-weight: 300 !important;
+    }
+
+    ul.dropdown-content.select-dropdown li span {
+        color: #000;
+    }
+
+    .brand-logo {
+        font-weight: 300 !important;
+    }
+
+    .divider {
+        width: 45px;
+        height: auto;
+        display: inline-block;
+    }
+
+    .btn:hover, .btn-large:hover {
+        color: #5271ff !important;
+        background-color: #ffffff !important;
+        border: none;
+    }
+
+    .btn, .btn-large {
+        text-decoration: none;
+        color: #fff;
+        background-color: #5271ff;
+        text-align: center;
+        letter-spacing: .5px;
+        transition: .2s ease-out;
+    }
+
+    @media screen and (min-width: 959px) {
+        .chart1 {
+            height: 540px;
+            width: 660px;
+        }
+
+        .chart2 {
+            height: 440px;
+            width: 660px;
+        }
+
+        .filler {
+            height: 18%;
+        }
+
+    }
+
+    @media screen and (max-width: 958px) and (min-width: 320px) {
+        .brand-logo {
+            /*left: 12% !important;*/
+            font-weight: 300 !important;
+        }
+
+        .chart1 {
+            height: 50%;
+            width: 100%;
+        }
+
+        .chart2 {
+            height: 50%;
+            width: auto;
+        }
+
+        .filler {
+            height: 8%;
+        }
+
+    }
+
+    .hckbl {
+        background: #5271ff;
+    }
+
+    .hckbl-text {
+        color: #5271ff;
+    }
+
+    .collapsible-header {
+        font-size: 20px;
+    }
+
+    .collapsible-body {
+        font-size: 18px;
+    }
+
+    .logo-img {
+        max-width: 40vw;
+        max-height: 20%;
+    }
+
+    .bold {
+        font-weight: bold !important;
+        letter-spacing: normal !important;
+    }
+
+    .wsec {
+        color: #5271ff;
+    }
+
+    .about {
+        font-size: 20px;
+        color: grey;
+        position: relative;
+    }
+
+    .blue-text {
+        color: #5271ff;
+    }
+
+    .white-text {
+        color: white;
+    }
+
+    h3 {
+        font-size: 2.92rem;
+        font-weight: 400 !important;
+    }
+
+    .about-text {
+        font-size: 32px;
+    }
+
+    .about-text2 {
+        font-size: 18px;
+    }
+
+    .rounded {
+        border-radius: 20px;
+        font-size: 20px;
+        padding: 10px;
+    }
+
+    .inline {
+        display: flex;
+    }
+
+    .bluebk {
+        background-color: #5271ff;
+    }
+
+    .icon {
+        max-width: 50px;
+        height: auto;
+    }
+
+    .tip-link {
+        color: #A4B4FE !important;
+        text-decoration: underline;
+    }
+
+    .border {
+        border: solid black;
+    }
+
+    .fixed-width{
+        width:300px; !important;
+    }
+</style>
+{{include 'web2py_ajax.html'}}
+<body>
+<div class="navbar-fixed" style="z-index: 9999;">
+    <nav class="hckbl bold">
+        <div class="nav-wrapper container">
+            <a href="/poc/default/" class="brand-logo">DASHBOARD</a>
+        </div>
+    </nav>
+</div>
+<h4 class="center blue-text">CONFIG FILE LOADER</h4>
+<div style="height: 5%"></div>
+<div class="row container">
+    <div class="col s4 m4 l4"></div>
+    <div class="col s4 m4 l4">
+    <div class="row">
+        <button class="btn btn-lg blue darken-2 fixed-width" onclick="init()">Initialize Data</button>
+    </div>
+    <div class="row">
+        <button class="btn btn-lg blue darken-2 fixed-width" onclick='window.location="{{=URL('default', 'baseview')}}";'>View Charts</button>
+    </div>
+    <div class="row">
+        <button class="btn btn-lg blue darken-2 fixed-width" onclick="truncate()">Reset Data</button>
+    </div>
+    </div>
+    <div class="col s4 m4 l4"></div>
+</div>
+<script type="text/javascript">
+    function init() {
+        var jsonData = $.ajax({
+            url: '{{=URL('initData')}}',
+            dataType: "json",
+            async: false
+        });
+        alert("Data Loaded")
+    }
+
+    function truncate() {
+        var jsonData = $.ajax({
+            url: '{{=URL('truncateData')}}',
+            dataType: "json",
+            async: false
+        });
+        alert("Truncated Data")
+    }
+</script>
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"
+        integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.0/angular.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.0/angular-route.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/js/materialize.min.js"></script>
+<script>
+    $(document).ready(function () {
+        $('select').material_select();
+    });
+</script>
+</body>
+</html>

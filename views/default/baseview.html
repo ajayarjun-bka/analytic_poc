@@ -1,0 +1,339 @@
+<html>
+
+<head>
+    <title>POC DASHBOARD</title>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <link rel="icon" type="image/png" href="static/images/favicon.ico"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:100" type="text/css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/css/materialize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
+</head>
+<style type="text/css">
+    ul.dropdown-content.select-dropdown {
+        max-height: 300px !important;
+    }
+
+    @font-face {
+        font-weight: 300 !important;
+    }
+
+    ul.dropdown-content.select-dropdown li span {
+        color: #000;
+    }
+
+    .brand-logo {
+        font-weight: 300 !important;
+    }
+
+    .divider {
+        width: 45px;
+        height: auto;
+        display: inline-block;
+    }
+
+    .btn:hover, .btn-large:hover {
+        color: #5271ff !important;
+        background-color: #ffffff !important;
+        border: none;
+    }
+
+    .btn, .btn-large {
+        text-decoration: none;
+        color: #fff;
+        background-color: #5271ff;
+        text-align: center;
+        letter-spacing: .5px;
+        transition: .2s ease-out;
+    }
+
+    @media screen and (min-width: 959px) {
+        .chart1 {
+            height: 540px;
+            width: 660px;
+        }
+
+        .chart2 {
+            height: 440px;
+            width: 660px;
+        }
+
+        .filler {
+            height: 18%;
+        }
+
+    }
+
+    @media screen and (max-width: 958px) and (min-width: 320px) {
+        .brand-logo {
+            /*left: 12% !important;*/
+            font-weight: 300 !important;
+        }
+
+        .chart1 {
+            height: 50%;
+            width: 100%;
+        }
+
+        .chart2 {
+            height: 50%;
+            width: auto;
+        }
+
+        .filler {
+            height: 8%;
+        }
+
+    }
+
+    .hckbl {
+        background: #5271ff;
+    }
+
+    .hckbl-text {
+        color: #5271ff;
+    }
+
+    .collapsible-header {
+        font-size: 20px;
+    }
+
+    .collapsible-body {
+        font-size: 18px;
+    }
+
+    .logo-img {
+        max-width: 40vw;
+        max-height: 20%;
+    }
+
+    .bold {
+        font-weight: bold !important;
+        letter-spacing: normal !important;
+    }
+
+    .wsec {
+        color: #5271ff;
+    }
+
+    .about {
+        font-size: 20px;
+        color: grey;
+        position: relative;
+    }
+
+    .blue-text {
+        color: #5271ff;
+    }
+
+    .white-text {
+        color: white;
+    }
+
+    h3 {
+        font-size: 2.92rem;
+        font-weight: 400 !important;
+    }
+
+    .about-text {
+        font-size: 32px;
+    }
+
+    .about-text2 {
+        font-size: 18px;
+    }
+
+    .rounded {
+        border-radius: 20px;
+        font-size: 20px;
+        padding: 10px;
+    }
+
+    .inline {
+        display: flex;
+    }
+
+    .bluebk {
+        background-color: #5271ff;
+    }
+
+    .icon {
+        max-width: 50px;
+        height: auto;
+    }
+
+    .tip-link {
+        color: #A4B4FE !important;
+        text-decoration: underline;
+    }
+
+    .border {
+        border: solid black;
+    }
+</style>
+{{include 'web2py_ajax.html'}}
+<body>
+<div class="navbar-fixed" style="z-index: 9999;">
+    <nav class="hckbl bold">
+        <div class="nav-wrapper container">
+            <a href="/poc/default/" class="brand-logo">DASHBOARD</a>
+        </div>
+    </nav>
+</div>
+<h4 class="center blue-text">{{=baseviewconfig['title']}}</h4>
+<div style="height: 5%"></div>
+<div class="row">
+{{if eval(baseviewconfig['basechart']):}}
+    <div class="col s12 m6 l6">
+        <div class="row container chart1" id="charts1">
+        </div>
+    </div>
+{{pass}}
+{{if eval(baseviewconfig['specialchart']):}}
+    <div class="col s12 m6 l6">
+        <h4 class="center blue-text">WORLD GDP SHARE</h4>
+        <div class="row container chart1" id="chart_div">
+        </div>
+    </div>
+{{pass}}
+    <div class="col s12 m6 l6">
+    {{if eval(baseviewconfig['containsdropdown']):}}
+        <div class="row container">
+            <select size="5" name="countries" onchange="drawChart(value)">
+                <option>Select a Country</option>
+            {{import json
+            dropdownlist = eval(dropdownlist)
+            }}
+            {{for entry in dropdownlist:
+            entry = ''.join(entry)
+            }}
+                <option value='{{=entry}}'>{{=entry}}</option>
+            {{pass}}
+            </select>
+        </div>
+    {{pass}}
+        <div class="row container chart2" id="charts2">
+        </div>
+    </div>
+    <div class="row container">
+        <div class="col s12">
+            <div class="card-panel rounded bluebk white-text">
+                <div class="inline valign-wrapper">
+                    <img src="http://flaticons.net/gd/makefg.php?i=icons/Gadgets/Light-Bulb.png&amp;r=255&amp;g=255&amp;b=255" class="icon">
+                    <p class="pushed">This dashboard is about credit usage patterns. Google charts has been used to draw the charts. The data for chart is being
+                        fetched from Sqlite database. Whenever a country is chosen from the drop-down, an AJAX call is made to fetch data from database.
+                        <a style="color: orangered" href="http://www.ajayarjun.com"> Kindly have a look at my portfolio.</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+    String.prototype.format = function () {
+        var i = 0, args = arguments;
+        return this.replace(/{}/g, function () {
+            return typeof args[i] != 'undefined' ? args[i++] : '';
+        });
+    };
+    google.charts.load('current', {'packages': ['corechart', 'treemap']});
+    var ch = false;
+    {{if eval(baseviewconfig['basechart']):}}
+    google.charts.setOnLoadCallback(drawChart);
+    {{pass}}
+    function drawChart(s) {
+    {{if eval(baseviewconfig['basechart']):}}
+        if (!(ch)) {
+            var data = google.visualization.arrayToDataTable({{=XML(basechartresult)}});
+            var chart = new google.visualization.{{=baseviewconfig['basecharttype']}}(document.getElementById('charts1'));
+            chart.draw(data);
+            ch = true;
+            (document.getElementById('charts2')).innerHTML = "<div class='filler'></div><p class='center about'>please choose a country from the dropdown</p>"
+        }
+    {{pass}}
+        if (s !== undefined && s !== "pie" && s !== "bar") {
+            var jsonData = $.ajax({
+                url: '{{=URL('subview')}}' + '/' + s,
+                dataType: "json",
+                async: false
+            }).responseText;
+            console.log(jsonData)
+            jsonData = $.parseJSON(jsonData);
+            var temp = undefined;
+            if (jsonData.hasOwnProperty('subresult')) {
+                temp = jsonData.subresult;
+            }
+            if (temp.length > 1) {
+                var data = new google.visualization.arrayToDataTable(temp);
+                var options = {
+                    hAxis: {
+                        title: jsonData['haxis'],
+                        format:jsonData['haxisformat']
+                    },
+                    vAxis: {
+                        title: jsonData['vaxis'],
+                        format:jsonData['vaxisformat']
+                    }
+
+                }
+                var chartGen = ("new google.visualization.{}(document.getElementById('charts2'))").format(jsonData.subcharttype);
+                console.log(chartGen);
+                var chart2 = eval(chartGen);
+                chart2.draw(data,options);
+            }
+            else {
+                (document.getElementById('charts2')).innerHTML = "<div class='filler'></div><p class='center about'>please choose a country from the dropdown</p>"
+            }
+        }
+    }
+
+    //      google.charts.load('current', {'packages':['treemap']});
+    {{if eval(baseviewconfig['specialchart']):}}
+    google.charts.setOnLoadCallback(drawSpecialChart);
+
+    function drawSpecialChart() {
+        var data = google.visualization.arrayToDataTable([
+            ['Location', 'Parent', 'Market trade volume (size)', 'Market increase/decrease (color)'],
+            ['Global', null, 0, 0],
+            ['USA', 'Global', 52, 31],
+            ['Mexico', 'Global', 24, 12],
+            ['Canada', 'Global', 16, -23],
+            ['France', 'Global', 42, -11],
+            ['Germany', 'Global', 31, -2],
+            ['Sweden', 'Global', 22, -13],
+            ['Italy', 'Global', 17, 4],
+            ['UK', 'Global', 21, -5],
+            ['China', 'Global', 36, 4],
+            ['Japan', 'Global', 20, -12],
+            ['India', 'Global', 40, 63]
+        ]);
+
+        tree = new google.visualization.TreeMap(document.getElementById('chart_div'));
+
+        tree.draw(data, {
+            minColor: '#f00',
+            midColor: '#ddd',
+            maxColor: '#0d0',
+            headerHeight: 15,
+            fontColor: 'black',
+            showScale: true
+        });
+    }
+    {{pass}}
+
+</script>
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"
+        integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.0/angular.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.0/angular-route.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/js/materialize.min.js"></script>
+<script>
+    $(document).ready(function () {
+        $('select').material_select();
+    });
+</script>
+</body>
+</html>
